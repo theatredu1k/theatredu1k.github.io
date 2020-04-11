@@ -47,6 +47,7 @@ ps {
 }
 p.ex1 {
   align="right";
+  line-height: 1em;
   padding-left: 100px;
 }
 footer {
