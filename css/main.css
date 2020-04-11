@@ -42,7 +42,7 @@ p {
 }
 ps {
     font-size: 1em;
-    line-height: 1em;
+    line-height: 0.5em;
     color: #333;
 }
 p.ex1 {
