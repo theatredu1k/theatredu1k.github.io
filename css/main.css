@@ -46,7 +46,7 @@ ps {
     color: #333;
 }
 p.ex1 {
-
+  align="right";
   padding-left: 100px;
 }
 footer {
