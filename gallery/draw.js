@@ -59,7 +59,7 @@ function bnorm(floatVal, low=0, high=255){return Math.round(floatVal*(high - low
 
 function setup() {
 
-  createCanvas(400,560) //400, 560
+  createCanvas(640,480) 
 
   colorMode(HSB)
 	//background(74,100,100)
@@ -106,7 +106,7 @@ txt1.position(20, 40);
 
 
 inputWings = createInput('0.5');
-inputWings.position(100,60);
+inputWings.position(100,200);
 let txt2 = createDiv(" leave");
 txt2.position(20, 60);
 
@@ -114,12 +114,12 @@ txt2.position(20, 60);
 
 
 inputRatio1 = createInput('90');
-inputRatio1.position(100,80);
+inputRatio1.position(100,220);
 let txt3 = createDiv("ratio1");
 txt3.position(20, 80);
 
 inputRatio2 = createInput('120');
-inputRatio2.position(100,100);
+inputRatio2.position(100,240);
 let txt4 = createDiv("ratio2");
 txt4.position(20, 100);
 
@@ -130,12 +130,12 @@ txt4.position(20, 100);
 let txt7 = createDiv(" Background");
 txt7.position(20, 160);
   backColorslider = createSlider(0.0,360.0,240);
-  backColorslider.position(120,180);
+  backColorslider.position(120,260);
   let txt8 = createDiv(" color");
   txt8.position(20, 180);
 
   BGbrightnessSlider = createSlider(0,100,random(100));
-  BGbrightnessSlider.position(120,200)
+  BGbrightnessSlider.position(120,280)
   let txt9 = createDiv("brigthness");
   txt9.position(20, 200);
 
