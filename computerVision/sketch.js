@@ -47,7 +47,7 @@ function draw() {
     
     const irisColor = color(random(360), 80, 80, 0.4);
     drawEye(eye1, irisColor);
-		drawEye(eye2, irisColor);
+//     drawEye(eye2, irisColor);
   }
 }
 
@@ -87,7 +87,7 @@ function drawEyeOutline(eye) {
     }
   });
   endShape();
-	line(eye.bottom.x,eye.bottom.y,eye.bottom.x+20,eye.bottom.y+20);
+	line(eye.bottom.x,eye.bottom.y,eye.bottom.x+randmom(60),eye.bottom.y);
 }
 
 function keyPressed() {
