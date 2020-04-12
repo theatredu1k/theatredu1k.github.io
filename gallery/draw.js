@@ -97,7 +97,7 @@ txt.position(20, 20);
 headslider = createSlider(0.0,4.0,1.0);
 headslider.position(100,140);
 let txt1 = createDiv("stem");
-txt1.position(20, 40);
+txt1.position(20, 140);
 
 // wingslider = createSlider(.1,6.0,.1);
 // wingslider.position(100,60);
@@ -108,7 +108,7 @@ txt1.position(20, 40);
 inputWings = createInput('0.5');
 inputWings.position(100,200);
 let txt2 = createDiv(" leave");
-txt2.position(20, 60);
+txt2.position(20, 200);
 
 
 
@@ -116,12 +116,12 @@ txt2.position(20, 60);
 inputRatio1 = createInput('90');
 inputRatio1.position(100,220);
 let txt3 = createDiv("ratio1");
-txt3.position(20, 80);
+txt3.position(20, 220);
 
 inputRatio2 = createInput('120');
 inputRatio2.position(100,240);
 let txt4 = createDiv("ratio2");
-txt4.position(20, 100);
+txt4.position(20, 240);
 
 
 
@@ -132,12 +132,12 @@ txt7.position(20, 160);
   backColorslider = createSlider(0.0,360.0,240);
   backColorslider.position(120,260);
   let txt8 = createDiv(" color");
-  txt8.position(20, 180);
+  txt8.position(20, 260);
 
   BGbrightnessSlider = createSlider(0,100,random(100));
   BGbrightnessSlider.position(120,280)
   let txt9 = createDiv("brigthness");
-  txt9.position(20, 200);
+  txt9.position(20, 280);
 
 
 
