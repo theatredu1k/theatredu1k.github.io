@@ -96,7 +96,7 @@ neutralButton.mousePressed(neutralBG)
 // txt.position(20, 120);
 headslider = createSlider(0.0,4.0,1.0);
 headslider.position(windowWidth/2,180);
-let txt1 = createDiv("stem");
+let txt1 = createDiv("stem--");
 //txt1.position(20, 180);
 txt1.position(windowWidth/2, 180);
 
