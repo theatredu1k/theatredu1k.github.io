@@ -129,7 +129,7 @@ txt4.position(width/2, 240);
   txt8.position(width/2, 260);
 
   BGbrightnessSlider = createSlider(0,100,random(100));
-  BGbrightnessSlider.position(120,280)
+  BGbrightnessSlider.position(width/2+20,280)
   let txt9 = createDiv("brigthness");
   txt9.position(width/2, 280);
 
