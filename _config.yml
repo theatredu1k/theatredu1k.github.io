@@ -1,3 +1,8 @@
-name: Sabrina Recoules Quang
+name: Theatredu1k Creative Coding
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+description: Theatredu1k Creative Coding and Data Stories 
+url: http://theatredu1k.github.io
+feed_items: 10
+feed_update_period: daily
+feed_update_frequency: 1
