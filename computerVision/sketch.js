@@ -87,6 +87,7 @@ function drawEyeOutline(eye) {
     }
   });
   endShape();
+	line(eye.bottom.x,eye.bottom.y,eye.bottom.x+20,eye.bottom.y+20);
 }
 
 function keyPressed() {
