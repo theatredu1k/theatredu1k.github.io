@@ -59,7 +59,7 @@ function bnorm(floatVal, low=0, high=255){return Math.round(floatVal*(high - low
 
 function setup() {
 
-  createCanvas(2480,1754) //400, 560
+  createCanvas(400,560) //400, 560
 
   colorMode(HSB)
 	//background(74,100,100)
@@ -95,7 +95,7 @@ neutralButton.mousePressed(neutralBG)
 let txt = createDiv(" Shapes");
 txt.position(20, 20);
 headslider = createSlider(0.0,4.0,1.0);
-headslider.position(100,40);
+headslider.position(100,140);
 let txt1 = createDiv("stem");
 txt1.position(20, 40);
 
