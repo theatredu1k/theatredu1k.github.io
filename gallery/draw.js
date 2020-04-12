@@ -105,7 +105,7 @@ txt1.position(20, 180);
 // txt2.position(20, 60);
 
 
-inputWings = createInput('0.5');
+inputWings = createInput('0.2');
 inputWings.position(100,200);
 let txt2 = createDiv(" leave");
 txt2.position(20, 200);
