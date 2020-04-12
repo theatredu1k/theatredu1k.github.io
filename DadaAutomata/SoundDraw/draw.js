@@ -73,7 +73,7 @@ function setup() {
   beat = new p5.PeakDetect(startMhz,endMhz, beatThreshold, 60/(bpm/60))
 
 //input Name
-paragraph=createP('Sabrina Recoules Quang©Theatredu1k '+day() + month()+year());
+paragraph=createP('Sabrina Recoules Quang©Theatredu1k '+day() +'/'+ month()+'/'+year());
 // inputName = createInput('enter your name');
 // inputName.changed(changeName)
 // function changeName(){
@@ -95,10 +95,10 @@ neutralButton.mousePressed(neutralBG)
 // let txt = createDiv(" Shapes");
 // txt.position(20, 120);
 headslider = createSlider(0.0,4.0,1.0);
-headslider.position(width/2,180);
+headslider.position(width/2,220);
 let txt1 = createDiv("stem");
 //txt1.position(20, 180);
-txt1.position(width/2, 180);
+txt1.position(width/2, 220);
 
 // wingslider = createSlider(.1,6.0,.1);
 // wingslider.position(100,60);
@@ -107,31 +107,31 @@ txt1.position(width/2, 180);
 
 
 inputWings = createInput('0.2');
-inputWings.position(80+width/2,200);
+inputWings.position(80+width/2,240);
 let txt2 = createDiv(" leave");
-txt2.position(width/2, 200);
+txt2.position(width/2, 240);
 
 inputRatio1 = createInput('90');
-inputRatio1.position(80+width/2,220);
+inputRatio1.position(80+width/2,260);
 let txt3 = createDiv("ratio1");
-txt3.position(width/2, 220);
+txt3.position(width/2, 260);
 
 inputRatio2 = createInput('120');
-inputRatio2.position(80+width/2,240);
+inputRatio2.position(80+width/2,280);
 let txt4 = createDiv("ratio2");
-txt4.position(width/2, 240);
+txt4.position(width/2, 280);
 
 // let txt7 = createDiv(" Background");
 // txt7.position(20, 160);
   backColorslider = createSlider(0.0,360.0,240);
-  backColorslider.position(100+width/2,260);
+  backColorslider.position(100+width/2,300);
   let txt8 = createDiv(" color");
-  txt8.position(width/2, 260);
+  txt8.position(width/2, 300);
 
   BGbrightnessSlider = createSlider(0,100,random(100));
-  BGbrightnessSlider.position(width/2+20,280)
+  BGbrightnessSlider.position(width/2+20,320)
   let txt9 = createDiv("brigthness");
-  txt9.position(width/2, 280);
+  txt9.position(width/2, 320);
 
 
 
