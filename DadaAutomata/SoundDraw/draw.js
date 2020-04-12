@@ -73,12 +73,12 @@ function setup() {
   beat = new p5.PeakDetect(startMhz,endMhz, beatThreshold, 60/(bpm/60))
 
 //input Name
-paragraph=createP('Sabrina©Theatredu1k '+ year());
-inputName = createInput('enter your name');
-inputName.changed(changeName)
-function changeName(){
-  paragraph.html(inputName.value()+ '©Theatredu1k '+ year());
-}
+paragraph=createP('Sabrina Recoules Quang©Theatredu1k '+day() + month()+year());
+// inputName = createInput('enter your name');
+// inputName.changed(changeName)
+// function changeName(){
+//   paragraph.html(inputName.value()+ '©Theatredu1k '+ year());
+// }
 //inputName.position(100,120);
 
 //button
@@ -95,10 +95,10 @@ neutralButton.mousePressed(neutralBG)
 // let txt = createDiv(" Shapes");
 // txt.position(20, 120);
 headslider = createSlider(0.0,4.0,1.0);
-headslider.position(20,180);
-let txt1 = createDiv("stem--");
+headslider.position(windowWidth/2,180);
+let txt1 = createDiv("stem");
 //txt1.position(20, 180);
-txt1.position(20, 180);
+txt1.position(windowWidth/2, 180);
 
 // wingslider = createSlider(.1,6.0,.1);
 // wingslider.position(100,60);
@@ -108,7 +108,7 @@ txt1.position(20, 180);
 
 inputWings = createInput('0.2');
 inputWings.position(100,200);
-let txt2 = createDiv(" leave/feuille");
+let txt2 = createDiv(" leave");
 txt2.position(20, 200);
 
 inputRatio1 = createInput('90');
