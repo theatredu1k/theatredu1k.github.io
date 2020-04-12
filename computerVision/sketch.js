@@ -22,10 +22,10 @@ function setup() {
 
 function draw() {
   // Flip the canvas so that we get a mirror image
-	translate(w, 0);
+  translate(w, 0);
   scale(-1.0, 1.0);
   // Uncomment the line below to see the webcam image (and no trail)
-  image(capture, 0, 0, w, h);
+ // image(capture, 0, 0, w, h);
   positions = tracker.getCurrentPosition();
 
   if (positions.length > 0) {
