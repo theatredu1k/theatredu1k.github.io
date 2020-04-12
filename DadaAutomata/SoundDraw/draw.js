@@ -95,10 +95,10 @@ neutralButton.mousePressed(neutralBG)
 // let txt = createDiv(" Shapes");
 // txt.position(20, 120);
 headslider = createSlider(0.0,4.0,1.0);
-headslider.position(80+width/2,height-20);
+headslider.position(80+width/2,180);
 let txt1 = createDiv("stem");
 //txt1.position(20, 180);
-txt1.position(width/2, height-80);
+txt1.position(width/2, 180);
 
 // wingslider = createSlider(.1,6.0,.1);
 // wingslider.position(100,60);
@@ -107,9 +107,9 @@ txt1.position(width/2, height-80);
 
 
 inputWings = createInput('0.2');
-inputWings.position(80+width/2,240);
+inputWings.position(80+width/2,200);
 let txt2 = createDiv(" leave");
-txt2.position(width/2, 240);
+txt2.position(width/2, 200);
 
 inputRatio1 = createInput('90');
 inputRatio1.position(80+width/2,260);
