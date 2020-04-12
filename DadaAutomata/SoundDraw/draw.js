@@ -73,7 +73,7 @@ function setup() {
   beat = new p5.PeakDetect(startMhz,endMhz, beatThreshold, 60/(bpm/60))
 
 //input Name
-paragraph=createP('Sabrina Recoules Quang ©Theatredu1k '+ year());
+paragraph=createP('Sabrina©Theatredu1k '+ year());
 inputName = createInput('enter your name');
 inputName.changed(changeName)
 function changeName(){
