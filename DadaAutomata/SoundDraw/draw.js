@@ -107,31 +107,31 @@ txt1.position(width/2, 180);
 
 
 inputWings = createInput('0.2');
-inputWings.position(100,200);
+inputWings.position(80+width/2,200);
 let txt2 = createDiv(" leave");
-txt2.position(20, 200);
+txt2.position(width/2, 200);
 
 inputRatio1 = createInput('90');
-inputRatio1.position(100,220);
+inputRatio1.position(80+width/2,220);
 let txt3 = createDiv("ratio1");
-txt3.position(20, 220);
+txt3.position(width/2, 220);
 
 inputRatio2 = createInput('120');
-inputRatio2.position(100,240);
+inputRatio2.position(80+width/2,240);
 let txt4 = createDiv("ratio2");
-txt4.position(20, 240);
+txt4.position(width/2, 240);
 
 // let txt7 = createDiv(" Background");
 // txt7.position(20, 160);
   backColorslider = createSlider(0.0,360.0,240);
-  backColorslider.position(120,260);
+  backColorslider.position(100+width/2,260);
   let txt8 = createDiv(" color");
-  txt8.position(20, 260);
+  txt8.position(width/2, 260);
 
   BGbrightnessSlider = createSlider(0,100,random(100));
   BGbrightnessSlider.position(120,280)
   let txt9 = createDiv("brigthness");
-  txt9.position(20, 280);
+  txt9.position(width/2, 280);
 
 
 
