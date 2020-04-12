@@ -92,12 +92,12 @@ neutralButton = createButton("neutral")
 neutralButton.mousePressed(neutralBG)
 
 //sliders
-let txt = createDiv(" Shapes");
-txt.position(20, 20);
+// let txt = createDiv(" Shapes");
+// txt.position(20, 120);
 headslider = createSlider(0.0,4.0,1.0);
-headslider.position(100,140);
+headslider.position(100,180);
 let txt1 = createDiv("stem");
-txt1.position(20, 140);
+txt1.position(20, 180);
 
 // wingslider = createSlider(.1,6.0,.1);
 // wingslider.position(100,60);
@@ -110,9 +110,6 @@ inputWings.position(100,200);
 let txt2 = createDiv(" leave");
 txt2.position(20, 200);
 
-
-
-
 inputRatio1 = createInput('90');
 inputRatio1.position(100,220);
 let txt3 = createDiv("ratio1");
@@ -123,12 +120,8 @@ inputRatio2.position(100,240);
 let txt4 = createDiv("ratio2");
 txt4.position(20, 240);
 
-
-
-
-
-let txt7 = createDiv(" Background");
-txt7.position(20, 160);
+// let txt7 = createDiv(" Background");
+// txt7.position(20, 160);
   backColorslider = createSlider(0.0,360.0,240);
   backColorslider.position(120,260);
   let txt8 = createDiv(" color");
