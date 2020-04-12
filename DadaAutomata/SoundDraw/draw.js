@@ -73,13 +73,13 @@ function setup() {
   beat = new p5.PeakDetect(startMhz,endMhz, beatThreshold, 60/(bpm/60))
 
 //input Name
-paragraph=createP('Sabrina Recoules Quang©Theatredu1k '+day() +'/'+ month()+'/'+year());
-// inputName = createInput('enter your name');
-// inputName.changed(changeName)
-// function changeName(){
-//   paragraph.html(inputName.value()+ '©Theatredu1k '+ year());
-// }
-//inputName.position(100,120);
+paragraph=createP('Sabrina Recoules Quang ©Theatredu1k '+year());
+inputName = createInput('enter your name');
+inputName.changed(changeName)
+function changeName(){
+  paragraph.html(day() + ' '+month()+' by '+'inputName.value()+ '©Theatredu1k '+ year());
+}
+inputName.position(100,120);
 
 //button
 button = createButton("newColor");
@@ -95,7 +95,7 @@ neutralButton.mousePressed(neutralBG)
 // let txt = createDiv(" Shapes");
 // txt.position(20, 120);
 headslider = createSlider(0.0,4.0,1.0);
-headslider.position(width/2,220);
+headslider.position(80+width/2,220);
 let txt1 = createDiv("stem");
 //txt1.position(20, 180);
 txt1.position(width/2, 220);
@@ -124,12 +124,12 @@ txt4.position(width/2, 280);
 // let txt7 = createDiv(" Background");
 // txt7.position(20, 160);
   backColorslider = createSlider(0.0,360.0,240);
-  backColorslider.position(100+width/2,300);
+  backColorslider.position(80+width/2,300);
   let txt8 = createDiv(" color");
   txt8.position(width/2, 300);
 
   BGbrightnessSlider = createSlider(0,100,random(100));
-  BGbrightnessSlider.position(width/2+20,320)
+  BGbrightnessSlider.position(80+width/2,320)
   let txt9 = createDiv("brigthness");
   txt9.position(width/2, 320);
 
