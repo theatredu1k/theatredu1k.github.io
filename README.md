@@ -1,2 +1,3 @@
 # theatredu1k.github.io
-#### implementing interaction with my coding for puppetry on the web with p5 js
+#### coding for puppetry and sharing it on the Web
+Hello World
