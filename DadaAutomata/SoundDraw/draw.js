@@ -108,7 +108,7 @@ txt1.position(windowWidth/2, 180);
 
 inputWings = createInput('0.2');
 inputWings.position(100,200);
-let txt2 = createDiv(" leave");
+let txt2 = createDiv(" leave/feuille");
 txt2.position(20, 200);
 
 inputRatio1 = createInput('90');
