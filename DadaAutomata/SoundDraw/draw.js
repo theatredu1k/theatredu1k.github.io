@@ -77,7 +77,7 @@ paragraph=createP('Sabrina Recoules Quang ©Theatredu1k '+year());
 inputName = createInput('enter your name');
 inputName.changed(changeName)
 function changeName(){
-  paragraph.html('SoundPostCard created on the '+day() + ' '+month()+' by '+inputName.value()+ '©Theatredu1k '+ year());
+  paragraph.html('Sound Visualisation '+day() + ' '+month()+' by '+inputName.value()+ '©Theatredu1k '+ year());
 }
 //inputName.position(80+width/2,120);
 
@@ -95,7 +95,7 @@ neutralButton.mousePressed(neutralBG)
 // let txt = createDiv(" Shapes");
 // txt.position(20, 120);
 headslider = createSlider(0.0,4.0,1.0);
-headslider.position(80+width/2,height-80);
+headslider.position(80+width/2,height-20);
 let txt1 = createDiv("stem");
 //txt1.position(20, 180);
 txt1.position(width/2, height-80);
