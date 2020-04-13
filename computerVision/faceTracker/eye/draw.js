@@ -78,10 +78,11 @@ function drawEyeOutline(eye) {
   const firstPoint = eye.outline[0];
   eye.outline.forEach((p, i) => {
     curveVertex(p.x, p.y);
+   if ( Math.random(80)<65) line(eye.bottom.x,eye.bottom.y,eye.bottom.x,eye.bottom.y+65);
+
     if (i === 0) {
       // Duplicate the initial point (see curveVertex documentation)
       curveVertex(firstPoint.x, firstPoint.y);
-      line(eye.bottom.x,eye.bottom.y,eye.bottom.x,eye.bottom.y+60);
     }
     if (i === eye.outline.length - 1) {
       // Close the curve and duplicate the closing point
