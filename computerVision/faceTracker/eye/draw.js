@@ -79,7 +79,6 @@ function drawEyeOutline(eye) {
   eye.outline.forEach((p, i) => {
  
    if( random(80)<65) {
-	   background(255,0,0);
 	   line(eye.bottom.x,eye.bottom.y,eye.bottom.x,eye.bottom.y+65);   
    }else{ 
         curveVertex(p.x, p.y);
