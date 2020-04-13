@@ -50,10 +50,10 @@ function draw() {
     
     //const irisColor = color(random(360), 80, 80, 0.4);
     const irisColor = color(330, 80, 80, 0.4);
-    c= random(40);
+    
 	  
-    drawEye(eye1, irisColor,c);
-    drawEye(eye2, irisColor,int(c/3));
+    drawEye(eye1, irisColor);
+    drawEye(eye2, irisColor);
   }
 }
 
@@ -69,13 +69,13 @@ function drawEye(eye, irisColor,k) {
   
   const irisRadius = min(eye.center.dist(eye.top), eye.center.dist(eye.bottom));
   const irisSize = irisRadius * 2;
-//   noStroke();
-//   fill(irisColor);
-//   ellipse(eye.center.x, eye.center.y, irisSize, irisSize);
+  noStroke();
+  fill(irisColor);
+  ellipse(eye.center.x, eye.center.y, irisSize, irisSize);
   
   const pupilSize = irisSize / 3;
-//   fill(0, 0.6);// black pupil
-//   ellipse(eye.center.x, eye.center.y, pupilSize, pupilSize);
+  fill(0, 0.6);// black pupil
+  ellipse(eye.center.x, eye.center.y, pupilSize, pupilSize);
 }
 
 function drawEyeOutline(eye,k) {
@@ -83,7 +83,7 @@ beginShape();
   const firstPoint = eye.outline[0];
   eye.outline.forEach((p, i) => {
 		 curveVertex(p.x, p.y);
- 		 line(eye.bottom.x,eye.bottom.y,eye.bottom.x,eye.bottom.y+k);
+ 		// line(eye.bottom.x,eye.bottom.y,eye.bottom.x,eye.bottom.y+k);
 	         
 	  
    	 if (i === 0) {
