@@ -76,10 +76,11 @@ function drawEye(eye, irisColor) {
 function drawEyeOutline(eye) {
 	beginShape();
   const firstPoint = eye.outline[0];
+	var c= 1;
   eye.outline.forEach((p, i) => {
  curveVertex(p.x, p.y);
- line(eye.bottom.x,eye.bottom.y,eye.bottom.x,eye.bottom.y+int(random(i)/5));   
-
+ line(eye.bottom.x,eye.bottom.y,eye.bottom.x,eye.bottom.y+c);
+	  if (c<40) {c+=1}else{c=1}
 	  
     if (i === 0) {
       // Duplicate the initial point (see curveVertex documentation)
