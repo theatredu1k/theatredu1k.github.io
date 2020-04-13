@@ -62,9 +62,9 @@ function drawEye(eye, irisColor) {
   
   const irisRadius = min(eye.center.dist(eye.top), eye.center.dist(eye.bottom));
   const irisSize = irisRadius * 2;
-  noStroke();
-  fill(irisColor);
-  ellipse(eye.center.x, eye.center.y, irisSize, irisSize);
+//   noStroke();
+//   fill(irisColor);
+//   ellipse(eye.center.x, eye.center.y, irisSize, irisSize);
   
   const pupilSize = irisSize / 3;
 //   fill(0, 0.6);// black pupil
@@ -72,21 +72,21 @@ function drawEye(eye, irisColor) {
 }
 
 function drawEyeOutline(eye) {
-// 	beginShape();
-//   const firstPoint = eye.outline[0];
-//   eye.outline.forEach((p, i) => {
-//     curveVertex(p.x, p.y);
-//     if (i === 0) {
-//       // Duplicate the initial point (see curveVertex documentation)
-//       curveVertex(firstPoint.x, firstPoint.y);
-//     }
-//     if (i === eye.outline.length - 1) {
-//       // Close the curve and duplicate the closing point
-//       curveVertex(firstPoint.x, firstPoint.y);
-//       curveVertex(firstPoint.x, firstPoint.y);
-//     }
-//   });
-//   endShape();
+	beginShape();
+  const firstPoint = eye.outline[0];
+  eye.outline.forEach((p, i) => {
+    curveVertex(p.x, p.y);
+    if (i === 0) {
+      // Duplicate the initial point (see curveVertex documentation)
+      curveVertex(firstPoint.x, firstPoint.y);
+    }
+    if (i === eye.outline.length - 1) {
+      // Close the curve and duplicate the closing point
+      curveVertex(firstPoint.x, firstPoint.y);
+      curveVertex(firstPoint.x, firstPoint.y);
+    }
+  });
+  endShape();
 	line(eye.bottom.x,eye.bottom.y,eye.bottom.x,eye.bottom.y+60);
 }
 
