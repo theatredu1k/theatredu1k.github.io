@@ -15,7 +15,7 @@ function setup() {
 
   frameRate(10);
   colorMode(HSB);
-  background(0);
+  background(random(255),0,0);
 
   tracker = new clm.tracker();
   tracker.init();
