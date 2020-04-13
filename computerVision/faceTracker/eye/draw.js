@@ -77,12 +77,10 @@ function drawEyeOutline(eye) {
 	beginShape();
   const firstPoint = eye.outline[0];
   eye.outline.forEach((p, i) => {
- 
-   if( random(80)<65) {
-	   line(eye.bottom.x,eye.bottom.y,eye.bottom.x,eye.bottom.y+65);   
-   }else{ 
-        curveVertex(p.x, p.y);
-        }
+ curveVertex(p.x, p.y);
+   if( i%5===0) {
+   line(eye.bottom.x,eye.bottom.y,eye.bottom.x,eye.bottom.y+3*i);   
+   }
 	  
     if (i === 0) {
       // Duplicate the initial point (see curveVertex documentation)
