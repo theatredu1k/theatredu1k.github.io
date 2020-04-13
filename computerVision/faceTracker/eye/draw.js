@@ -60,6 +60,7 @@ function getPoint(index) {
 function drawEye(eye, irisColor) {
   noFill();
   stroke(255, 0.4);
+  var c= 1;
   drawEyeOutline(eye);
   
   const irisRadius = min(eye.center.dist(eye.top), eye.center.dist(eye.bottom));
@@ -74,24 +75,27 @@ function drawEye(eye, irisColor) {
 }
 
 function drawEyeOutline(eye) {
-	beginShape();
+beginShape();
   const firstPoint = eye.outline[0];
-	var c= 1;
   eye.outline.forEach((p, i) => {
- curveVertex(p.x, p.y);
- line(eye.bottom.x,eye.bottom.y,eye.bottom.x,eye.bottom.y+c);
-	  if (c<40) {c=c+1;}else{c=1;}
+		 curveVertex(p.x, p.y);
+ 		 line(eye.bottom.x,eye.bottom.y,eye.bottom.x,eye.bottom.y+c);
+	         if (c<40) {
+		  	 c=c+1;
+	         }else{
+		 	 c=1;
+	        }
 	  
-    if (i === 0) {
+   	 if (i === 0) {
       // Duplicate the initial point (see curveVertex documentation)
-      curveVertex(firstPoint.x, firstPoint.y);
-    }
-    if (i === eye.outline.length - 1) {
+        curveVertex(firstPoint.x, firstPoint.y);
+        }
+  
+        if (i === eye.outline.length - 1) {
       // Close the curve and duplicate the closing point
-      curveVertex(firstPoint.x, firstPoint.y);
-      curveVertex(firstPoint.x, firstPoint.y);
-	   
-    }
+        curveVertex(firstPoint.x, firstPoint.y);
+        curveVertex(firstPoint.x, firstPoint.y);   
+        }
   });
   endShape();
 	
