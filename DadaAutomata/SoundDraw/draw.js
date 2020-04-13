@@ -77,7 +77,7 @@ paragraph=createP('Sabrina Recoules Quang ©Theatredu1k '+year());
 inputName = createInput('enter your name');
 inputName.changed(changeName)
 function changeName(){
-  paragraph.html(day() + 'D'+month()+'M'+hour()+sec()+' Sonic Drawing by  '+inputName.value()+ ' ©Theatredu1k '+ year());
+  paragraph.html(day() + 'D'+month()+'M'+hour()+minute()+' Sonic Drawing by  '+inputName.value()+ ' ©Theatredu1k '+ year());
 }
 //inputName.position(80+width/2,120);
 
