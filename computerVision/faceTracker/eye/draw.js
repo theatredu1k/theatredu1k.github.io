@@ -61,7 +61,7 @@ function getPoint(index) {
   return createVector(positions[index][0], positions[index][1]);
 }
 
-function drawEye(eye, irisColor,k) {
+function drawEye(eye, irisColor) {
   noFill();
   stroke(255, 0.4);
  
@@ -71,7 +71,9 @@ function drawEye(eye, irisColor,k) {
   const irisSize = irisRadius * 2;
   noStroke();
   fill(irisColor);
-  ellipse(eye.center.x, eye.center.y, irisSize, irisSize);
+//   ellipse(eye.center.x, eye.center.y, irisSize, irisSize);
+	rect(eye.center.x, eye.center.y, irisSize, irisSize,30);
+	//rect( x, y, w, h, detailX, detailY ) 
   
   const pupilSize = irisSize / 3;
   fill(0, 0.6);// black pupil
