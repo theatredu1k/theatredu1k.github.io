@@ -4,6 +4,7 @@ let capture = null;
 let tracker = null;
 let positions = null;
 let w = 0, h = 0;
+let c= 1;// constant to add variation in drawing outline
 
 function setup() {
   w = 640;
@@ -47,9 +48,15 @@ function draw() {
       bottom: getPoint(31)
     }
     
-    const irisColor = color(random(360), 80, 80, 0.4);
-    drawEye(eye1, irisColor);
-    drawEye(eye2, irisColor);
+    //const irisColor = color(random(360), 80, 80, 0.4);
+    if (c<40) {
+		  	 c=c+1;
+	         }else{
+		 	 c=1;
+	        }
+	  
+    drawEye(eye1, irisColor,c);
+    drawEye(eye2, irisColor,c-1);
   }
 }
 
@@ -57,11 +64,11 @@ function getPoint(index) {
   return createVector(positions[index][0], positions[index][1]);
 }
 
-function drawEye(eye, irisColor) {
+function drawEye(eye, irisColor,k) {
   noFill();
   stroke(255, 0.4);
-  var c= 1;
-  drawEyeOutline(eye);
+ 
+  drawEyeOutline(eye,k);
   
   const irisRadius = min(eye.center.dist(eye.top), eye.center.dist(eye.bottom));
   const irisSize = irisRadius * 2;
@@ -74,17 +81,13 @@ function drawEye(eye, irisColor) {
 //   ellipse(eye.center.x, eye.center.y, pupilSize, pupilSize);
 }
 
-function drawEyeOutline(eye) {
+function drawEyeOutline(eye,k) {
 beginShape();
   const firstPoint = eye.outline[0];
   eye.outline.forEach((p, i) => {
 		 curveVertex(p.x, p.y);
- 		 line(eye.bottom.x,eye.bottom.y,eye.bottom.x,eye.bottom.y+c);
-	         if (c<40) {
-		  	 c=c+1;
-	         }else{
-		 	 c=1;
-	        }
+ 		 line(eye.bottom.x,eye.bottom.y,eye.bottom.x,eye.bottom.y+k);
+	         
 	  
    	 if (i === 0) {
       // Duplicate the initial point (see curveVertex documentation)
