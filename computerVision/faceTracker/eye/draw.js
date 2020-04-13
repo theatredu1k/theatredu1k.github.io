@@ -94,7 +94,10 @@ function drawEyeOutline(eye) {
 
 function keyPressed() {
   // Clear background
-  background(0);
+ 
+	if (keyCode === 27) {
+		background(0);
+	}
 }
 
 function mouseClicked() {
