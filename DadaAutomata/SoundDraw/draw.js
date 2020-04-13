@@ -91,13 +91,13 @@ stopButton.mousePressed(stopLoop);
 neutralButton = createButton("neutral")
 neutralButton.mousePressed(neutralBG)
 
-//sliders
+//SLIDERS---------------------------------------------------
 // let txt = createDiv(" Shapes");
 // txt.position(20, 120);
 headslider = createSlider(0.0,4.0,1.0);
 headslider.position(80+width/2,140);
 let txt1 = createDiv("stem");
-txt1.position(width/3, 140);
+txt1.position(width/2, 140);
 
 // wingslider = createSlider(.1,6.0,.1);
 // wingslider.position(100,60);
