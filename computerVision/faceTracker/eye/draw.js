@@ -80,7 +80,7 @@ function drawEyeOutline(eye) {
   eye.outline.forEach((p, i) => {
  curveVertex(p.x, p.y);
  line(eye.bottom.x,eye.bottom.y,eye.bottom.x,eye.bottom.y+c);
-	  if (c<40) {c+=1}else{c=1}
+	  if (c<40) {c=c+1;}else{c=1;}
 	  
     if (i === 0) {
       // Duplicate the initial point (see curveVertex documentation)
