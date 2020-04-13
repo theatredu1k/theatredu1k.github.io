@@ -47,7 +47,7 @@ function draw() {
     
     const irisColor = color(random(360), 80, 80, 0.4);
     drawEye(eye1, irisColor);
-//     drawEye(eye2, irisColor);
+    drawEye(eye2, irisColor);
   }
 }
 
