@@ -81,12 +81,12 @@ function changeName(){
 }
 //inputName.position(80+width/2,120);
 
-//button
+//buttons
 button = createButton("newColor");
 button.mousePressed(changeColor);
 
- stopButton = createButton("stop/go")
- stopButton.mousePressed(stopLoop);
+stopButton = createButton("stop/go")
+stopButton.mousePressed(stopLoop);
 
 neutralButton = createButton("neutral")
 neutralButton.mousePressed(neutralBG)
@@ -97,8 +97,7 @@ neutralButton.mousePressed(neutralBG)
 headslider = createSlider(0.0,4.0,1.0);
 headslider.position(80+width/2,140);
 let txt1 = createDiv("stem");
-//txt1.position(20, 180);
-txt1.position(width/2, 140);
+txt1.position(0, 140);
 
 // wingslider = createSlider(.1,6.0,.1);
 // wingslider.position(100,60);
@@ -133,10 +132,6 @@ txt4.position(width/2, 200);
   let txt9 = createDiv("brigthness");
   txt9.position(width/2, 240);
 
-
-
-
-
 // // wingTransparency;
 // // wingSaturationMultiplier;
 // wingTslider = createSlider(0,100,80);
@@ -145,9 +140,6 @@ txt4.position(width/2, 200);
 // wingSatslider = createSlider(0,100,80);
 // wingSatslider.position(1100,140);
 //
-
-
-
 
 }
 
@@ -175,10 +167,10 @@ function draw() {
   let scaledSpectrum = splitOctaves(spectrum, octaves)
   let volume = max(scaledSpectrum)
   beat.update(fft)
-
-  sign = Math.sign(sign + prevMouseX - mouseX)
+// angle for rotation decreased by sign : 1 or -1, depending on the movement of the mouse
+  sign = Math.sign(sign + prevMouseX - mouseX) 
   angle -= sign
-  prevMouseX = mouseX
+  prevMouseX = mouseX // mouse position is stored for next move
   //translate(mouseX,mouseY)
   translate(random(windowWidth),mouseY)
   rotate(radians(angle))
@@ -193,11 +185,11 @@ function draw() {
   	fill(hue, volume*wingSaturationMultiplier, wingBrightness, wingTransparency)
 
   //	stroke(hue, volume, strokeBaseBrightness- volume, strokeTransparency)
-    stroke(hue, volume*wingSaturationMultiplier, strokeBaseBrightness, strokeTransparency)
-    strokeWeight(0.5)
+    	stroke(hue, volume*wingSaturationMultiplier, strokeBaseBrightness, strokeTransparency)
+   	 strokeWeight(0.5)
 
-    let N = scaledSpectrum.length
-    let mirrorCopy = Array(N)
+   	 let N = scaledSpectrum.length
+    	 let mirrorCopy = Array(N)
 
 
     for (let i=0; i < N; i++) { //N or dadaNode.length
