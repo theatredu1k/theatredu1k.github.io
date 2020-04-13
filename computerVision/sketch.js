@@ -4,8 +4,8 @@ let positions = null;
 let w = 0, h = 0;
 
 function setup() {
-  w = windowWidth;
-  h = windowHeight;
+  w = 640;
+  h = 480;
   capture = createCapture(VIDEO);
   createCanvas(w, h);
   capture.size(w, h);
