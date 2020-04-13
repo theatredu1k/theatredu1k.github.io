@@ -50,14 +50,10 @@ function draw() {
     
     //const irisColor = color(random(360), 80, 80, 0.4);
     const irisColor = color(330, 80, 80, 0.4);
-    if (c<40) {
-		  	 c=c+1;
-	         }else{
-		 	 c=1;
-	        }
+    c= random(40);
 	  
     drawEye(eye1, irisColor,c);
-    drawEye(eye2, irisColor,c-1);
+    drawEye(eye2, irisColor,int(c/3));
   }
 }
 
