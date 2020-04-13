@@ -78,7 +78,7 @@ function drawEyeOutline(eye) {
   const firstPoint = eye.outline[0];
   eye.outline.forEach((p, i) => {
    // curveVertex(p.x, p.y);
-   if(Math.floor((Math.random() * 10) + 1))<65) {
+   if( Math.floor((Math.random() * 10) + 1)<65) {
 	   background(255,0,0);
 	   line(eye.bottom.x,eye.bottom.y,eye.bottom.x,eye.bottom.y+65);
    }
