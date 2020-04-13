@@ -98,11 +98,14 @@ function keyPressed() {
 	if (keyCode === 27) {
 		background(0);
 	}
+	if (keyCode === 80) {
+		const timestamp = timestampString();
+  		saveCanvas("eyeTrail-" + timestamp, "png");
+	}
 }
 
 function mouseClicked() {
-  const timestamp = timestampString();
-  saveCanvas("eyeTrail-" + timestamp, "png");
+  
 }
 
 function timestampString() {
