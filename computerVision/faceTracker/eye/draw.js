@@ -71,7 +71,7 @@ function drawEye(eye, irisColor) {
   noStroke();
   fill(irisColor);
 //   ellipse(eye.center.x, eye.center.y, irisSize, irisSize);
-rect(eye.center.x, eye.center.y, irisSize, irisSize*2,30);
+rect(eye.center.x, eye.center.y+second(), irisSize*random(2), irisSize,30);
 //rect( x, y, w, h, detailX, detailY ) 
   
   const pupilSize = irisSize / 3;
@@ -83,7 +83,7 @@ function drawEyeOutline(eye) {
 beginShape();
   const firstPoint = eye.outline[0];
   eye.outline.forEach((p, i) => {
-		 curveVertex(p.x, p.y);         
+	curveVertex(p.x, p.y);         
 	  
    	 if (i === 0) {
       // Duplicate the initial point (see curveVertex documentation)
