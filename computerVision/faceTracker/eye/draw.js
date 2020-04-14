@@ -48,9 +48,8 @@ function draw() {
       bottom: getPoint(31)
     }
     
-    //const irisColor = color(random(360), 80, 80, 0.4);
-    const irisColor = color(330, 80, 80, 0.4);
-    
+    const irisColor = color(random(360), 80, 80, 0.4);
+      
 	  
     drawEye(eye1, irisColor);
     drawEye(eye2, irisColor);
@@ -72,8 +71,8 @@ function drawEye(eye, irisColor) {
   noStroke();
   fill(irisColor);
 //   ellipse(eye.center.x, eye.center.y, irisSize, irisSize);
-	rect(eye.center.x, eye.center.y, irisSize, irisSize,30);
-	//rect( x, y, w, h, detailX, detailY ) 
+rect(eye.center.x, eye.center.y, irisSize, irisSize*2,30);
+//rect( x, y, w, h, detailX, detailY ) 
   
   const pupilSize = irisSize / 3;
   fill(0, 0.6);// black pupil
