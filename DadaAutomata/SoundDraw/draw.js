@@ -59,7 +59,7 @@ function bnorm(floatVal, low=0, high=255){return Math.round(floatVal*(high - low
 
 function setup() {
 
-  createCanvas(640,480) 
+  createCanvas(640,480)
 
   colorMode(HSB)
 	//background(74,100,100)
@@ -94,43 +94,44 @@ neutralButton.mousePressed(neutralBG)
 //SLIDERS---------------------------------------------------
 // let txt = createDiv(" Shapes");
 // txt.position(20, 120);
+txt1= createP('stem');
 headslider = createSlider(0.0,4.0,1.0);
-headslider.position(80+width/2,140);
-let txt1 = createDiv("stem");
-txt1.position(width/2, 140);
+//headslider.position(80+width/2,140);
+//let txt1 = createDiv("stem");
+
+//txt1.position(width/2, 140);
 
 // wingslider = createSlider(.1,6.0,.1);
 // wingslider.position(100,60);
 // let txt2 = createDiv(" leave");
 // txt2.position(20, 60);
 
-
-inputWings = createInput('0.2');
-inputWings.position(80+width/2,160);
 let txt2 = createDiv(" leave");
-txt2.position(width/2, 160);
+inputWings = createInput('0.2');
+// inputWings.position(80+width/2,160);
+// txt2.position(width/2, 160);
 
-inputRatio1 = createInput('90');
-inputRatio1.position(80+width/2,180);
 let txt3 = createDiv("ratio1");
-txt3.position(width/2, 180);
-
-inputRatio2 = createInput('120');
-inputRatio2.position(80+width/2,200);
+inputRatio1 = createInput('90');
+// inputRatio1.position(80+width/2,180);
+// txt3.position(width/2, 180);
+//
 let txt4 = createDiv("ratio2");
-txt4.position(width/2, 200);
+inputRatio2 = createInput('120');
+// inputRatio2.position(80+width/2,200);
+// txt4.position(width/2, 200);
 
 // let txt7 = createDiv(" Background");
 // txt7.position(20, 160);
-  backColorslider = createSlider(0.0,360.0,240);
-  backColorslider.position(80+width/2,220);
   let txt8 = createDiv(" color");
-  txt8.position(width/2, 220);
+  backColorslider = createSlider(0.0,360.0,240);
+  // backColorslider.position(80+width/2,220);
+  // txt8.position(width/2, 220);
 
-  BGbrightnessSlider = createSlider(0,100,random(100));
-  BGbrightnessSlider.position(80+width/2,240)
   let txt9 = createDiv("brigthness");
-  txt9.position(width/2, 240);
+  BGbrightnessSlider = createSlider(0,100,random(100));
+  // BGbrightnessSlider.position(80+width/2,240)
+  // txt9.position(width/2, 240);
 
 // // wingTransparency;
 // // wingSaturationMultiplier;
@@ -168,7 +169,7 @@ function draw() {
   let volume = max(scaledSpectrum)
   beat.update(fft)
 // angle for rotation decreased by sign : 1 or -1, depending on the movement of the mouse
-  sign = Math.sign(sign + prevMouseX - mouseX) 
+  sign = Math.sign(sign + prevMouseX - mouseX)
   angle -= sign
   prevMouseX = mouseX // mouse position is stored for next move
   //translate(mouseX,mouseY)
@@ -391,3 +392,13 @@ function smoothPoint(spectrum, index, numberOfNeighbors) {
 
   return val;
 }
+// function windowResized() {
+//   w = windowWidth;
+//   h = windowHeight;
+//   resizeCanvas(w, h);
+//   background(0);
+// }
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
