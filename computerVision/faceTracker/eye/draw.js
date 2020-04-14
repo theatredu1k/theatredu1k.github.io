@@ -16,7 +16,7 @@ function setup() {
 
   frameRate(10);
   colorMode(HSB);
-  background(random(255),0,0);
+  background(0);
 
   tracker = new clm.tracker();
   tracker.init();
@@ -80,7 +80,7 @@ rect(eye.center.x, eye.center.y+second(), irisSize*random(2), irisSize,30);
 }
 
 function drawEyeOutline(eye) {
-beginShape();
+  beginShape();
   const firstPoint = eye.outline[0];
   eye.outline.forEach((p, i) => {
 	curveVertex(p.x, p.y);         
