@@ -1,14 +1,11 @@
-
-
 let capture = null;
 let tracker = null;
 let positions = null;
 let w = 0, h = 0;
-let c= 1;// constant to add variation in drawing outline
 
 function setup() {
-  w = 640;
-  h = 480;
+  w = windowWidth;
+  h = windowHeight;
   capture = createCapture(VIDEO);
   createCanvas(w, h);
   capture.size(w, h);
@@ -25,10 +22,10 @@ function setup() {
 
 function draw() {
   // Flip the canvas so that we get a mirror image
-  translate(w, 0);
+	translate(w, 0);
   scale(-1.0, 1.0);
   // Uncomment the line below to see the webcam image (and no trail)
- // image(capture, 0, 0, w, h);
+  //image(capture, 0, 0, w, h);
   positions = tracker.getCurrentPosition();
 
   if (positions.length > 0) {
@@ -49,10 +46,8 @@ function draw() {
     }
     
     const irisColor = color(random(360), 80, 80, 0.4);
-      
-	  
     drawEye(eye1, irisColor);
-    drawEye(eye2, irisColor);
+		drawEye(eye2, irisColor);
   }
 }
 
@@ -63,57 +58,45 @@ function getPoint(index) {
 function drawEye(eye, irisColor) {
   noFill();
   stroke(255, 0.4);
- 
   drawEyeOutline(eye);
   
   const irisRadius = min(eye.center.dist(eye.top), eye.center.dist(eye.bottom));
   const irisSize = irisRadius * 2;
   noStroke();
   fill(irisColor);
-//   ellipse(eye.center.x, eye.center.y, irisSize, irisSize);
-rect(eye.center.x, eye.center.y+second(), irisSize*random(2), irisSize,30);
-//rect( x, y, w, h, detailX, detailY ) 
+  ellipse(eye.center.x, eye.center.y, irisSize, irisSize);
   
   const pupilSize = irisSize / 3;
-  fill(0, 0.6);// black pupil
+  fill(0, 0.6);
   ellipse(eye.center.x, eye.center.y, pupilSize, pupilSize);
 }
 
 function drawEyeOutline(eye) {
-  beginShape();
+	beginShape();
   const firstPoint = eye.outline[0];
   eye.outline.forEach((p, i) => {
-	curveVertex(p.x, p.y);         
-	  
-   	 if (i === 0) {
+    curveVertex(p.x, p.y);
+    if (i === 0) {
       // Duplicate the initial point (see curveVertex documentation)
-        curveVertex(firstPoint.x, firstPoint.y);
-        }
-  
-        if (i === eye.outline.length - 1) {
+      curveVertex(firstPoint.x, firstPoint.y);
+    }
+    if (i === eye.outline.length - 1) {
       // Close the curve and duplicate the closing point
-        curveVertex(firstPoint.x, firstPoint.y);
-        curveVertex(firstPoint.x, firstPoint.y);   
-        }
+      curveVertex(firstPoint.x, firstPoint.y);
+      curveVertex(firstPoint.x, firstPoint.y);
+    }
   });
   endShape();
-	
 }
 
 function keyPressed() {
   // Clear background
- 
-	if (keyCode === 27) {
-		background(0);
-	}
-	if (keyCode === 80) {
-		const timestamp = timestampString();
-  		saveCanvas("eyeTrail-" + timestamp, "png");
-	}
+  background(0);
 }
 
 function mouseClicked() {
-  
+  const timestamp = timestampString();
+  saveCanvas("eyeTrail-" + timestamp, "png");
 }
 
 function timestampString() {
