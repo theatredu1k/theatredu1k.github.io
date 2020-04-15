@@ -1,10 +1,10 @@
-//based on https://gist.github.com/kerryrodden/6eb0998a8aadf9cc63b1445dd1897aab
 
 
 let capture = null;
 let tracker = null;
 let positions = null;
 let w = 0, h = 0;
+
 
 function setup() {
   w = 640;
@@ -21,6 +21,8 @@ function setup() {
   tracker = new clm.tracker();
   tracker.init();
   tracker.start(capture.elt);
+
+  colorPen = color(random(360), 80, 80, 0.4);
 }
 //=====================DRAW function=====================================
 function draw() {
@@ -37,7 +39,7 @@ function draw() {
     // https://www.auduno.com/clmtrackr/docs/reference.html
     const eye1 = {
       outline: [23, 63, 24, 64, 25, 65, 26, 66].map(getPoint),
-      onePoint: getPoint(24),
+      onePoint: getPoint(23),
       twoPoint: getPoint(25),
       center: getPoint(27),
       top: getPoint(24),
@@ -67,15 +69,16 @@ function getPoint(index) {
 function drawEye(eye, irisColor) {
   noFill();
   stroke(255, 0.4);
- // drawEyeOutline(eye);
+  drawEyeOutline(eye);
 
   const irisRadius = min(eye.center.dist(eye.top), eye.center.dist(eye.bottom));
   const irisSize = irisRadius*2;
- // noStroke();
-  //fill(irisColor);
-  //ellipse(eye.center.x, eye.center.y, irisSize, irisSize);
-  stroke(irisColor);
-  line(eye.onePoint.x,eye.onePoint.y,eye.center.x,eye.center.y);
+  // noStroke();
+  // fill(irisColor);
+  // ellipse(eye.center.x, eye.center.y, irisSize, irisSize);
+   stroke(colorPen);
+   line(eye.onePoint.x,eye.onePoint.y,eye.center.x,eye.center.y);
+
   //point(eye.center.x,eye.center.y);
   const pupilSize = irisSize / 3;
 //   fill(0, 0.6);// black pupil
@@ -85,6 +88,7 @@ function drawEye(eye, irisColor) {
 function drawEyeOutline(eye) {
 	beginShape();
   const firstPoint = eye.outline[0];
+
 
   eye.outline.forEach((p, i) => {
   //  curveVertex(p.x, p.y);
@@ -118,11 +122,16 @@ function keyPressed() {
   // Clear background
 
 	if (keyCode === 27) {
-		background(255);
+		background(0);
 	}
 	if (keyCode === 80) {
 		const timestamp = timestampString();
   		saveCanvas("eyeTrail-" + timestamp, "png");
+	}
+  if (keyCode === 49) {
+
+    colorPen = color(random(360),100, 45, 0.65);
+    irisSize = irisRadius*6;
 	}
 }
 
@@ -138,9 +147,8 @@ function windowResized() {
   w = windowWidth;
   h = windowHeight;
   resizeCanvas(w, h);
-  background(255);
+  background(0);
 }
 // function windowResized() {
 //   resizeCanvas(windowWidth, windowHeight);
 // }
-
