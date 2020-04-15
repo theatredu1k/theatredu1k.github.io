@@ -16,13 +16,13 @@ function setup() {
 
   frameRate(10);
   colorMode(HSB);
-  background(0);
+  background(255);
 
   tracker = new clm.tracker();
   tracker.init();
   tracker.start(capture.elt);
 
-  colorPen = color(random(360), 80, 80, 0.4);
+  irisColor = color(random(360), 80, 80, 0.4);
 }
 //=====================DRAW function=====================================
 function draw() {
@@ -55,7 +55,7 @@ function draw() {
     }
 
     //const irisColor = color(random(360), 100, 45, 0.4);
-    drawEye(eye1, colorPen);
+    drawEye(eye1, irisColor);
   //  drawEye(eye2, irisColor);
   }
 }//end draw
@@ -131,7 +131,7 @@ function keyPressed() {
 	}
   if (keyCode === 49) {
 
-    colorPen = color(0,0, 0, 1);
+    irisColor = color(0,0, 0, 1);
    
 	}
 }
