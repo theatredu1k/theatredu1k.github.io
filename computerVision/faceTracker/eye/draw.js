@@ -54,8 +54,8 @@ function draw() {
       bottom: getPoint(31)
     }
 
-    const irisColor = color(random(360), 80, 80, 0.4);
-    drawEye(eye1, irisColor);
+    //const irisColor = color(random(360), 100, 45, 0.4);
+    drawEye(eye1, colorPen);
   //  drawEye(eye2, irisColor);
   }
 }//end draw
@@ -76,7 +76,7 @@ function drawEye(eye, irisColor) {
   // noStroke();
   // fill(irisColor);
   // ellipse(eye.center.x, eye.center.y, irisSize, irisSize);
-   stroke(colorPen);
+   stroke(irisColor);
    line(eye.onePoint.x,eye.onePoint.y,eye.center.x,eye.center.y);
 
   //point(eye.center.x,eye.center.y);
@@ -122,7 +122,8 @@ function keyPressed() {
   // Clear background
 
 	if (keyCode === 27) {
-		background(0);
+		background(255);
+		colorPen = color(random(360), 100, 45, 0.4);
 	}
 	if (keyCode === 80) {
 		const timestamp = timestampString();
@@ -130,8 +131,8 @@ function keyPressed() {
 	}
   if (keyCode === 49) {
 
-    colorPen = color(random(360),100, 45, 0.65);
-    irisSize = irisRadius*6;
+    colorPen = color(0,0, 0, 1);
+   
 	}
 }
 
