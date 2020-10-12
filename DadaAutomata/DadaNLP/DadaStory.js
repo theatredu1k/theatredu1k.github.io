@@ -32,8 +32,6 @@ pyshell.on('message', function (message) {
 
 
 
-
-
 function setup(){
 
   createCanvas(400, 400);
