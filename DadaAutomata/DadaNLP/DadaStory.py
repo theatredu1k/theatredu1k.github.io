@@ -163,14 +163,14 @@ print (sentence5,sentence6)
 
 
 #write the sentences in a file "dadaPoem.txt" for the nodes to read outloud
-output = open("T1KW/dadaPoem.txt", "a")
+output = open("dadaPoem.txt", "a")
 for a in range(0,len(sentences)):
         output.write(sentences[a])
         output.write("\n")
 output.close()
 d = datetime.datetime.today()
 nameFile = d.strftime('%d-%Y')
-nameFile = "T1KW/dadaPoem/dadaDay.txt"
+nameFile = "dadaDay.txt"
 output = open(nameFile, "w")
 #trunk the poem for twitter
 for a in range(0,len(sentences)-2):
