@@ -1,4 +1,4 @@
-import {PythonShell} from 'python-shell';
+
 var myPythonScriptPath = 'DadaStory.py';
 // Use python shell
 // var PythonShell = require('python-shell');
