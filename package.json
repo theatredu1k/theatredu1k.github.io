@@ -8,6 +8,7 @@
       "version": "1.0.0"
     },
     "python-shell": "^2.0.2",
+    "requirejs": "^2.3.6",
     "ski": {
       "integrity": "sha1-FeSd/U8EQmDib8c8AUJlEYUhN7Y=",
       "resolved": "https://registry.npmjs.org/ski/-/ski-1.0.0.tgz",
