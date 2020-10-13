@@ -1,9 +1,10 @@
 
-var myPythonScriptPath = 'DadaStory.py';
+let myPythonScriptPath = 'DadaStory.py';
 // Use python shell
- // var PythonShell = require('python-shell');
+let PythonShell = require('python-shell');
 // import PythonShell from 'python-shell';
-let {PythonShell} = require(['python-shell'], function (python-shell) {
+
+// let {PythonShell} = require(['python-shell'], function (python-shell) {
 });
 var pyshell = new PythonShell(myPythonScriptPath);
 
