@@ -10,7 +10,7 @@ rect_size = None
 def setup():
     global rect_size
 
-    createP("Hi! This is an example of how to use p5.dom.js with pyp5js")
+    createP("samples from pyp5js on using p5.dom.js")
 
     # creates a container div
     slider_div = createDiv()
