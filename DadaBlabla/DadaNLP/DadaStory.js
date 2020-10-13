@@ -45,7 +45,8 @@ function setup(){
 function draw() {
   background(50);
   noStroke();
-  fill(255);
+  fill(255,0,0);
+  ellipse(200,200,40);
   text(message, 50, 200);
 }
 
