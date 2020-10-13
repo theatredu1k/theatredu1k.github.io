@@ -4,7 +4,6 @@ var myPythonScriptPath = 'DadaStory.py';
  // var PythonShell = require('python-shell');
 // import PythonShell from 'python-shell';
 let {PythonShell} = require(['python-shell'], function (python-shell) {
-    //'python-shell' is now loaded.
 });
 var pyshell = new PythonShell(myPythonScriptPath);
 
