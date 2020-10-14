@@ -44,6 +44,7 @@ sentence = "In the " + newTech[random.randint(0,len(newTech)-1)]+", "+source_txt
 sentences.insert(0,sentence)
 print(sentence)
 
+
 #1 and 2 Sentence set the mood , give an advice
 #retrieve the NLTK tags
 tagged_sent = pos_tag(sentence.split())
