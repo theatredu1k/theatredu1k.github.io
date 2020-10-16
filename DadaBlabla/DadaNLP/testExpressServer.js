@@ -2,11 +2,11 @@
 //scoring in regards of new materialist and ooo people from academia
 //relationist / human/ system
 
-//reading the words file
+//reading the puppets file
 var fs = require('fs');
-var data = fs.readFileSync('words.json'); // sync to stop other operations before it is finished
-var words = JSON.parse(data);
-console.log(words);
+var data = fs.readFileSync('dataset/puppets.json'); // sync to stop other operations before it is finished
+var puppets = JSON.parse(data);
+console.log(puppets);
 
 
 console.log('input parameters on my static website local "DadaTheory"');
@@ -18,7 +18,7 @@ function listening(){
   console.log("listening...");
 }
 
-app.use(express.static('DadaTheory'));// website 'DadaTheory' on the local server
+app.use(express.static('DadaTheory'));// emulate locally website 'DadaTheory' on the local server 3000, go to the directory 'DadaTheory' and read DadaTheory/index.html
 
 // in relation to the database we want to build:
 
@@ -34,9 +34,9 @@ function addWord(request,response){
   }
   response.send(reply);
  }else{
-    words[word] = score;// word is the key, score is the value
-    var data = JSON.stringify(words, null, 2);
-    fs.writeFile ('words.json',data, finished);
+    puppets[word] = score;// word is the key, score is the value
+    var data = JSON.stringify(puppets, null, 2);
+    fs.writeFile ('dataset/puppets.json',data, finished);
 
     function finished(err){
       console.log('all set');
@@ -62,10 +62,10 @@ function addWord(request,response){
 
 }
 
-// entering localhost:3000/all and sending the object "words"on the webpage
+// entering localhost:3000/all and sending the object "puppets"on the webpage
 app.get ('/all',sendAll);
 function sendAll(request, response){
-  response.send(words);
+  response.send(puppets);
 }
 //searching for the author and the Score
 
@@ -74,11 +74,11 @@ app.get('/search/:word/',searchWord);
 function searchWord(request, response){
   var word =request.params.word;
   var reply;
-  if (words[word]){
+  if (puppets[word]){
     reply = {
     status: "found",
     word: word,
-    score: words[word]
+    score: puppets[word]
   }
 }else{
   reply = {status: "not found",
