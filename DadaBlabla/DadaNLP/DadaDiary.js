@@ -1,5 +1,9 @@
 var txt;
-// variables for draw230ct20
+// variables Draw everything into a pGraphics object.
+
+let scaleOutput = 1;
+let output;
+let canvas;
 
 // end variables for draw230ct20
 
@@ -32,6 +36,13 @@ function setup() {
   var button = select('#loadfile');
   button.mousePressed(loadFile);
   // console.log(txt);
+  //
+  var resetButton = createButton("reset");
+  resetButton.mousePressed(resetSketch);
+  function resetSketch(){
+  window.location.reload(false);
+  }
+
 }
 function drawLiq(vNnum,nm,sm,fcm){//https://www.openprocessing.org/sketch/816453
   //drawLiq(radius,noise, sinus,rotation ) dividers for framecount
