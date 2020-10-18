@@ -28,9 +28,9 @@ function fileSelected(file) {//read data from the file object : name, size, type
 function setup() {
   createCanvas(320,240);
   createFileInput(fileSelected);
+  paragraph=createP('©Theatredu1k '+day()+month()+year());
   var button = select('#loadfile');
   button.mousePressed(loadFile);
-
   // console.log(txt);
 }
 function drawLiq(vNnum,nm,sm,fcm){//https://www.openprocessing.org/sketch/816453
@@ -153,5 +153,6 @@ function draw(){
 
   // draw150ct20();
    draw23Oct20();
+
 
 }
