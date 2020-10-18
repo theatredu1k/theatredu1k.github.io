@@ -150,8 +150,8 @@ function drawDrop(vNnum,nm,sm,fcm){//https://www.openprocessing.org/sketch/81645
 
 
 function draw(){
-  // clear();
+
   // draw150ct20();
-  // draw23Oct20();
+   draw23Oct20();
 
 }
