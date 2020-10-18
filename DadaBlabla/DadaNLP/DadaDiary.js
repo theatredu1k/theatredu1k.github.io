@@ -36,7 +36,8 @@ function setup() {
   var button = select('#loadfile');
   button.mousePressed(loadFile);
   // console.log(txt);
-  //
+
+  //reload the html
   var resetButton = createButton("reset");
   resetButton.mousePressed(resetSketch);
   function resetSketch(){
@@ -162,8 +163,14 @@ function drawDrop(vNnum,nm,sm,fcm){//https://www.openprocessing.org/sketch/81645
 
 function draw(){
 
-  // draw150ct20();
-   draw23Oct20();
+  if(day()%2==1) {
+      draw150ct20();
+  }else{
+      draw23Oct20();
+
+  }
+
+  //
 
 
 }
