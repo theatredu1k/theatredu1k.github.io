@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "p5": "^1.1.9"
+    "p5": "^1.1.9",
+    "require": "^2.4.20"
   }
 }
