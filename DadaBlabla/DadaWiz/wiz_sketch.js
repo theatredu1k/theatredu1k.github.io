@@ -19,7 +19,7 @@ let rad_ellipse;
 
 function setup(){
 
-  createCanvas(265,265);// 255+ radius ellipse
+  createCanvas(265*2,265);// 255+ radius ellipse
   noStroke();
   // blendMode(BLEND);
   background(65,8,10);
