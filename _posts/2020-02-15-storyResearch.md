@@ -10,7 +10,7 @@ While reflecting  I dreamed of a tree (my research) with a seed as the act of ma
 While reflecting about my reflections , I feel the headlines formatted in small captions like “story research’ or ‘reflect’ are characters of my research story
 If I take textile as a metaphor for research
 I am interested to show the potential development from a thread
-Research Story
+<u>Research Story</u>
 could I reintroduce Sid, the tomato seed ?
 The uncanny life of tomato Sid ?
 Imagine I am a seed, I have to develop my roots
