@@ -12,16 +12,31 @@ let pos;
 let lines;
 let wizzi;
 
+let colorSpans =[];
+let keys =[];
+
+
+let rSlider, gSlider, bSlider;
+
  function preload (){
    data = loadJSON('../dataset/xkcd.json');
-   lines = loadStrings('../dataset/alice.txt');
+   lines = loadStrings('../dataset/neruda.txt');
 
  }
 
 
 function setup(){
 
-  createCanvas(265*2,265);// 255+ radius ellipse
+  createCanvas(55,55);
+  rSlider = createSlider(-100, 100, 0);
+  gSlider = createSlider(-100, 100, 0);
+  bSlider = createSlider(-100, 100, 0);
+  createP('');
+  rSlider.input(sliderChanged);
+  gSlider.input(sliderChanged);
+  bSlider.input(sliderChanged);
+
+
   noStroke();
   // blendMode(BLEND);
   background(65,8,10);
@@ -31,63 +46,37 @@ function setup(){
   // noCanvas();
   vectors = processData(data);//process the data for the dataset we have loaded
   //console.log(vectors);
-  pos = createVector(random(255),random(255),random(255));// random vector for the ellipse
-  pos2 = createVector(random(255),random(255),random(255));// random vector for the rect
-
- //word2vec-2
   wizzi = join(lines,' ');
   let words = wizzi.split(/\W+/);
-  for(let i =0; i<words.length;i++){
-    createSpan(words[i]);
-    createSpan(' ');
-  }
-  //createP(wizzi);
 
+
+
+  for(let word of words){ // use----(let word of words)---instead of ---for(let i = 0; i < words.length; i++)
+    let span = createSpan(word);// create the span in html for this word
+    if (vectors[word]){ // if there is a matching colour in the text to one key in vectors
+      let c=  vectors[word];
+      span.style('background-color', `rgb(${c.x},${c.y},${c.z})`);
+      colorSpans.push(span); //put this span into the array
+      keys.push(word);// keep this word into keys array
+    }
+    //createSpan(word);
+    createSpan(' ');// put back a space between the words
+  }
+  //createP(wizzi);// output the text into html
+
+  //console.log(keys); // show me the keys filled with word coloured from the text
+  // create some math formulas with these words in keys[]
+  let avg = createVector(0,0,0);
+  for (let key of keys){
+    let v = vectors[key]; // get the vector values for this keys
+    avg.add(v); // add the vector one by one of all the keys in the array
+  }
+  avg.div(keys.length);// average is sum of the vectors /number of vectors in the keys[]
+  let nearest = findNearest(avg);
+  // console.log(nearest);
+  background(avg.x,avg.y,avg.z); // background in avg vectors colour value x,y,z
 }
 
-function draw(){
-  let colorName = findNearest(pos); // this is the nearest color to the pos from the arrays
-  let colorName2 = findNearest(pos2); // this is the nearest color to the pos from the arrays
-  // noStroke();
-  let v = vectors[colorName];
-  let v2 = vectors[colorName2];
-  //let div = createDiv(colorName);// output the name of the color on the screen
-  //div.html(colorName);
-  //div.style('color', `rgb(${v.x},${v.y},${v.z})`);// css syntax , just the text in color
-   //or
-   //div.style('background-color', `rgb(${v.x},${v.y},${v.z})`);// css syntax , the background in color
-
-   fill(v.x, v.y, v.z); // output an ellipse with the color changing on the screen
-   if (minute()%2==0)
-   {
-  // ellipse(pos.x,pos.y, 10+sin(minute()), 10+cos(minute())); //(x,y,w,h, detail)
-   rect(pos.x,pos.y,width,2);
-   //rect(width/3,0,height,width);
-  }else{
-   rect(pos.x,pos.y,2,height);
-   // fill(v2.x, v2.y, v2.z); // output an ellipse with the color changing on the screen
-   // rect(0,0,height/3,width);
-  }
-
-  let r = p5.Vector.random3D(); // a random vector for the step in the walk from pos
-  r.mult(50); // scale the step
-  pos.add(r); // now we have add a random vector to the previous pos
-  // keep me out of negative position/ values :
-  pos.x = constrain(pos.x, 0, 255);
-  pos.y = constrain(pos.y, 0, 255);
-  pos.z = constrain(pos.z, 0, 255);
-
-  let r2 = p5.Vector.random3D(); // a random vector for the step in the walk from pos
-  r2.mult(50); // scale the step
-  pos2.add(r2); // now we have add a random vector to the previous pos
-  // keep me out of negative position/ values :
-  pos2.x = constrain(pos2.x, 0, 255);
-  pos2.y = constrain(pos2.y, 0, 255);
-  pos2.z = constrain(pos2.z, 0, 255);
-
-  frameRate(2);
-
-}
 
 
 function processData(data){// process the data for the dataset we have loaded
@@ -123,4 +112,21 @@ function findNearest(v){ // v is the vector I want to be the nearest to
 
 function distance(v1,v2){// distance between 2 vectors
   return p5.Vector.dist(v1,v2);
+}
+
+
+function sliderChanged(){
+  let r = rSlider.value();
+  let g = gSlider.value();
+  let b = bSlider.value();
+  //console.log(r,g,b);
+  for (let span of colorSpans){
+    let word = span.html();// key colour
+    let v = vectors[word].copy();// take a copy of the values colours, so we do not change them
+    v.add(r,g,b);// add the values from the sliders to the copy of the vector
+    let nearest = findNearest(v);
+    span.html(nearest); // render in html that word key so we change the word into this new one with
+    span.style('background-color', `rgb(${v.x},${v.y},${v.z})`);
+
+  }
 }
