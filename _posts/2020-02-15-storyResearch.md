@@ -3,7 +3,7 @@ layout: post
 title: "Research dreamed"
 date: 2020-02-15
 ---
-15 Feb-2020
+
 Story Research
 While reflecting  I dreamed of a tree (my research) with a seed as the act of making. While  reflecting, the seed grows some roots and simultaneously as many branches as potential development/ paths for my research
 
