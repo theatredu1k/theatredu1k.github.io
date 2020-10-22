@@ -63,7 +63,7 @@ function setup() {
 
   colorMode(HSB)
 	//background(74,100,100)
-  background(0,0,0)
+  background(2,78,14)
   audio = new p5.AudioIn()
   audio.start()
 
@@ -401,4 +401,3 @@ function smoothPoint(spectrum, index, numberOfNeighbors) {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
-
