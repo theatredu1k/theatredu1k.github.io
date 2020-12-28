@@ -1,0 +1,17 @@
+{
+    "description": "A list of location for the story",
+    "locations": [
+        "a forest",
+        "an hotel",
+        "a shopping mall",
+        "a fun fair",
+        "a hospital",
+        "an office",
+        "a government building",
+        "a sewer",
+        "a museum",
+        "gymnasium",
+        "a corridor",
+        "a boat"
+    ]
+}

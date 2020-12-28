@@ -1,0 +1,21 @@
+{
+  "probe": 10,
+  "character": -10,
+  "uncanny": 5,
+  "alive": 10,
+  "dead": 0,
+  "inanimate": 8,
+  "animate": 3,
+  "listening": 24,
+  "performing": 10,
+  "probing": 10,
+  "moving": 20,
+  "is dead": 20,
+  "is alive": 20,
+  "is aloof": 20,
+  "alouette": 10,
+  "moineau": 10,
+  "corbeau": 10,
+  "pigeon": 10,
+  "crapaud": 100
+}

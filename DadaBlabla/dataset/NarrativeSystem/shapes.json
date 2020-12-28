@@ -1,0 +1,15 @@
+{
+  "description": "A list of shapes for the story",
+  "shapes": [
+    "thick",
+    "thin",
+    "convex",
+    "concave",
+    "curve",
+    "sinusoidal",
+    "rectangle",
+    "triangle",
+    "oval",
+    "dot",
+    "line"
+    ]}
