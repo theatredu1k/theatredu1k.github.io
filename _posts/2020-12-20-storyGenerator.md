@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Story generator"
-date: 2020-02-15
+date: 2020-12-20
 ---
 
 # Story generator
