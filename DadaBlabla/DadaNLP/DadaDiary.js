@@ -1,3 +1,5 @@
+// coding animated shapes training
+
 var txt;
 // variables Draw everything into a pGraphics object.
 
