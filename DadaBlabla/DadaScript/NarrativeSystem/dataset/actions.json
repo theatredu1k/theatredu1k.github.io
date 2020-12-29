@@ -1,0 +1,11 @@
+{
+  "description": "A list of actions for the story",
+  "actions": [
+    "resolve",
+    "win",
+    "play",
+    "train",
+    "discover",
+    "communicate",
+    "manipulate"
+    ]}

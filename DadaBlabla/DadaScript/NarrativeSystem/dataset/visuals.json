@@ -1,0 +1,15 @@
+{
+  "description": "A list of visuals for the story",
+  "visuals": [
+    "transparent",
+    "opalescent",
+    "opaque",
+    "translucent",
+    "diffracted",
+    "dark",
+    "bright",
+    "oscillating",
+    "vibrant",
+    "glittery"
+
+    ]}

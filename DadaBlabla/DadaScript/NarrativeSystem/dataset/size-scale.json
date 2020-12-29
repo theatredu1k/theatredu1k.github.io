@@ -1,0 +1,11 @@
+{
+  "description": "A list of size and scale for the story",
+  "size-scales": [
+    "one",
+    "many",
+    "tall",
+    "small",
+    "fat",
+    "thin",
+    "thick"
+    ]}
