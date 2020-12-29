@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Looking for the seeds for the story via Python"
+title: "Story Seeds via Python"
 date: 2020-12-25
 ---
 
