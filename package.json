@@ -7,7 +7,7 @@
       "resolved": "https://registry.npmjs.org/connective/-/connective-1.0.0.tgz",
       "version": "1.0.0"
     },
-    "python-shell": "^2.0.2",
+    "python-shell": "^2.0.3",
     "requirejs": "^2.3.6",
     "ski": {
       "integrity": "sha1-FeSd/U8EQmDib8c8AUJlEYUhN7Y=",
