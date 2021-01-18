@@ -16,10 +16,7 @@ function loadFile() {
 
 function fileLoaded(data) {
 //  txt = data;
-  txt= data.split(".")
-  // createP(join(txt, '\n'));
-  console.log(txt)
-  createP(txt)
+  createP(join(data, '<br/>'));
 }
 
 function fileSelected(file) {//read data from the file object : name, size, type

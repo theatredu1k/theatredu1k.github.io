@@ -2,13 +2,22 @@
   "description": "A list of people for the story",
   "people": [
     "mechanic",
-    "physicist",
     "biologist",
     "doctor",
     "nurse",
     "psychoanalyst",
     "banker",
     "politician",
-    "artist",
-    "lawyer"
+    "lawyer",
+    "archaeologist",
+    "ballerina",
+    "pianist",
+    "teacher",
+    "painter",
+    "detective",
+    "policeman",
+    "thief",
+    "pirate",
+    "judge"
+
     ]}
