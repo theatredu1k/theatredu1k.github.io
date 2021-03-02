@@ -4,7 +4,7 @@
 // Code for: https://youtu.be/0Mq2CxspF5s
 
 
-
+let button;
 function loadFile() {
   loadStrings('../dataset/dadaPoem.txt ', fileLoaded);
 }
@@ -29,7 +29,7 @@ function setup() {
 
   createFileInput(fileSelected);
 
-  var button = select("#loadfile");
+  button = select("#loadfile");
   button.mousePressed(loadFile);
 
 }
