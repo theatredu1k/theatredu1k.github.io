@@ -5,6 +5,8 @@
 
 
 
+
+
 function loadFile() {
   loadStrings('../dataset/dadaPoem.txt ', fileLoaded);
 }
@@ -28,7 +30,6 @@ function setup() {
   noCanvas();
 
   createFileInput(fileSelected);
-
   
   var button = select('#loadfile');
   button.mousePressed(loadFile);
