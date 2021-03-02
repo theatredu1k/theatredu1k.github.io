@@ -3,26 +3,26 @@
 // http://patreon.com/codingtrain
 // Code for: https://youtu.be/0Mq2CxspF5s
 
-// var txt;
+
 
 function loadFile() {
   loadStrings('../dataset/dadaPoem.txt ', fileLoaded);
 }
 
 function fileLoaded(data) {
-  // txt = data;
+
   createP(join(data, '<br/>'));
 }
 
 function fileSelected(file) {
   createP(file.name + ' ' + file.size + ' ' + file.type);
-
+// call back function
   if (file.type == 'text') {
     createP(file.data);
   } else {
-    createP('I need a text file.');
+    createP('I need a .txt file.');
   }
-  // console.log(file);
+
 }
 
 function setup() {
@@ -33,5 +33,4 @@ function setup() {
   var button = select('#loadfile');
   button.mousePressed(loadFile);
 
-  // console.log(txt);
 }
