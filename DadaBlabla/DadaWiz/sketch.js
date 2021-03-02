@@ -30,7 +30,7 @@ function setup() {
 
   createFileInput(fileSelected);
 
-  var button = select('#loadfile');
+  button = select('#loadfile');
   button.mousePressed(loadFile);
 
 }
