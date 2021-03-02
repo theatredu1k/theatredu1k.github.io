@@ -10,7 +10,6 @@ function loadFile() {
 }
 
 function fileLoaded(data) {
-
   createP(join(data, '<br/>'));
 }
 
@@ -30,7 +29,7 @@ function setup() {
 
   createFileInput(fileSelected);
 
-  button = select('#loadfile');
+  var button = select('#loadfile');
   button.mousePressed(loadFile);
 
 }
