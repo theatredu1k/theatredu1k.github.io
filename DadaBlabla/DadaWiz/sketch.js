@@ -6,7 +6,7 @@
 // var txt;
 
 function loadFile() {
-  loadStrings('rainbow.txt', fileLoaded);
+  loadStrings('../dataset/dadaPoem.txt ', fileLoaded);
 }
 
 function fileLoaded(data) {
