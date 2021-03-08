@@ -32,7 +32,8 @@ function fileSelected(file) {//read data from the file object : name, size, type
 }
 
 function setup() {
-  createCanvas(320,240);
+  // createCanvas(320,240);
+  noCanvas();
   createFileInput(fileSelected);
   paragraph=createP('©Theatredu1k '+day()+month()+year());
  // var button = select('#loadfile');
