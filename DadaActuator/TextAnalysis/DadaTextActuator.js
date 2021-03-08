@@ -38,14 +38,14 @@ function setup() {
  // var button = select('#loadfile');
   button = createButton('loadFile');
   button.mousePressed(loadFile);
-  // console.log(txt);
+  console.log(txt);
 
-  // //reload the html
-  // var resetButton = createButton("reset");
-  // resetButton.mousePressed(resetSketch);
-  // function resetSketch(){
-  // window.location.reload(false);
-  // }
+  //reload the html
+  var resetButton = createButton("reset");
+  resetButton.mousePressed(resetSketch);
+  function resetSketch(){
+  window.location.reload(false);
+  }
 
 }
 // function drawLiq(vNnum,nm,sm,fcm){//https://www.openprocessing.org/sketch/816453
