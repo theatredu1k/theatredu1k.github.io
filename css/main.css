@@ -59,9 +59,15 @@ p.ex2 {
   padding-left: 100px;
 }
 
-footer {
+/* footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+} */
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
 }
 
 ul.posts {
