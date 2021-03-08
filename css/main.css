@@ -18,14 +18,14 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: cyan1;
+    color: #333;
 }
 a:hover {
     text-decoration: underline;
 }
 h1 {
     font-size: 3em;
-    font-family: Apercu,Sans-Serif;
+    font-family: 'Arial', 'Helvetica','Sans-Serif';
     color: #A92323;
 }
 h2 {
@@ -87,7 +87,7 @@ ul.posts li {
 #rcorners3 {
   border-radius: 25px;
   /* background: url(YellowBioText.png); */
-  background: cornsilk1;
+  background: CadetBlue;
   background-position: left top;
   background-repeat: repeat;
   padding: 20px;
