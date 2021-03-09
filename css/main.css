@@ -4,7 +4,7 @@ body {
     margin: 60px auto;
     width: 70%;
     color: black;
-    background-color: white
+    background-color: beige;
 }
 /* nav ul, footer ul {
     font-family: 'Arial', 'Helvetica','Sans-Serif';
@@ -73,7 +73,7 @@ h1 {
 
 h2 {
     font-size: 2em;
-    font-family:'Open_Sans';
+    font-family:'Merriweather';
     color: #660033;
 }
 
@@ -85,7 +85,7 @@ h3 {
     color: #5F9EA0;
 }
 p {
-    font-family:'Roboto';
+    font-family:'Lato';
     font-size: 1em;
     line-height: 1em;
     color: #333;
@@ -213,5 +213,19 @@ ul.posts li {
     font-family: 'Open_Sans';
     src: url('https/theatredu1k.github.io/fonts/Open_Sans/OpenSans-SemiBold.ttf') format('truetype');
     font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('https/theatredu1k.github.io/fonts/Merriweather/Merriweather-Light.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('https/theatredu1k.github.io/fonts/Lato/Lato-Regular.ttf') format('truetype');
     font-style: normal;
 }
