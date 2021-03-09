@@ -69,7 +69,7 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family: 'Open_Sans', 'Helvetica','Sans-Serif';
+    font-family: 'Lato', 'Helvetica','Sans-Serif';
     color: #5C8C9C;
 }
 
@@ -84,7 +84,7 @@ h2 {
 
 h3 {
     font-size: 1.5em;
-    font-family:'Arial', 'Helvetica','Sans-Serif';
+    font-family:'Lato', 'Helvetica','Sans-Serif';
     color: #5F9EA0;
 }
 p {
@@ -229,6 +229,6 @@ ul.posts li {
 
 @font-face {
     font-family: 'Lato';
-    src: url('https/theatredu1k.github.io/fonts/Lato/Lato-Regular.ttf') format('truetype');
+    src: url('https/theatredu1k.github.io/fonts/Lato/Lato-Thin.ttf') format('truetype');
     font-style: normal;
 }
