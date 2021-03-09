@@ -72,7 +72,7 @@ h1 {
 }
 h2 {
     font-size: 2em;
-    font-family:'Roboto', 'Helvetica','Sans-Serif';
+    font-family:'Coming_Soon'
     color: #660033;
 }
 h3 {
@@ -194,6 +194,12 @@ ul.posts li {
 @font-face {
     font-family: Roboto;
     src: url('https/theatredu1k.github.io/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Coming_Soon;
+    src: url('https/theatredu1k.github.io/fonts/Coming_Soon/ComingSoon-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
