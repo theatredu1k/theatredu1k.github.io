@@ -203,3 +203,10 @@ ul.posts li {
     font-weight: bold;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Open_Sans';
+    src: url('https/theatredu1k.github.io/fonts/Open_Sans/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
