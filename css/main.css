@@ -200,6 +200,6 @@ ul.posts li {
 @font-face {
     font-family: Coming_Soon;
     src: url('https/theatredu1k.github.io/fonts/Coming_Soon/ComingSoon-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
