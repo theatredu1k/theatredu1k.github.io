@@ -73,9 +73,7 @@ h1 {
 
 h2 {
     font-size: 2em;
-    font-family:'Coming_Soon';
-    font-weight:normal;
-    font-style:normal;
+    font-family:'Open_Sans';
     color: #660033;
 }
 
@@ -87,6 +85,7 @@ h3 {
     color: #5F9EA0;
 }
 p {
+    font-family:'Roboto';
     font-size: 1em;
     line-height: 1em;
     color: #333;
@@ -199,7 +198,7 @@ ul.posts li {
 
 @font-face {
     font-family: 'Roboto';
-    src: url('https/theatredu1k.github.io/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    src: url('https/theatredu1k.github.io/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
