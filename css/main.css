@@ -70,11 +70,17 @@ h1 {
     font-family: 'Arial', 'Helvetica','Sans-Serif';
     color: #A92323;
 }
+
 h2 {
     font-size: 2em;
-    font-family:'Coming_Soon'
+    font-family:'Coming_Soon';
+    font-weight:normal;
+    font-style:normal;
     color: #660033;
 }
+
+
+
 h3 {
     font-size: 1.5em;
     font-family:'Arial', 'Helvetica','Sans-Serif';
