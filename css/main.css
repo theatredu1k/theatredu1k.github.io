@@ -147,7 +147,14 @@ ul.posts li {
   width: 100px;
   height: 36px;
 }
-
+#rcorners1 {
+  border-radius: 25px;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 160px;
+  height: 120px;
+}
 .sidenav {
   height: 100%;
   width: 160px;
