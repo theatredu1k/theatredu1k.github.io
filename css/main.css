@@ -174,7 +174,7 @@ ul.posts li {
 
 .main {
   margin-left: 240px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
+  font-size: 12px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
 
