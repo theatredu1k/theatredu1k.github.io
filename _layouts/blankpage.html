@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-
-			</nav>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{ page.title }}</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
 
 
-			<div class="container">
+	</head>
+	<body>
+		<!-- <nav> -->
+		<div class="sidebar">
+				<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/cv">CV</a></li>
+						<li><a href="/blog">Diary</a></li>
+<!-- 				<li><a href="/gallery">Gallery</a></li> -->
+			<li><a href="/computerVision">DadaVision</a></li>
+			<li><a href="/DadaAutomata">DadaAutomata</a></li>
+			<li><a href="/DadaBlabla">DadaBlabla</a></li>
+			<li><a href="/DadaActuator">DadaActuator</a></li>
+			<li><a href="/DadaThings">DadaThings</a></li>
+			<li><a href="/DadaGallery">DadaGallery</a></li>
+		</ul>
+		</div>
+		<!-- </nav> -->
+		<div class="content">
 
-			{{ content }}
+		{{ content }}
 
-			</div><!-- /.container -->
+		</div><!-- /.container -->
+
 			<footer>
 							<a href="mailto:sabrina@theatredu1k.com">email    </a>
 							© Sabrina Recoules Quang  <script type="text/javascript">document.write( new Date().getFullYear() )</script>
