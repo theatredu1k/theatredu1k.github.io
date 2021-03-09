@@ -121,8 +121,8 @@ p.ex2 {
 } */
 
 .footer {
-  margin-left: 160px; /* Same as the width of the sidenav */
    position:absolute;
+   margin-left: 160px; /* Same as the width of the sidenav */
    bottom:0;
    width:100%;
    height:60px;   /* Height of the footer */
