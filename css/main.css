@@ -72,7 +72,7 @@ h1 {
 }
 h2 {
     font-size: 2em;
-    font-family:'Arial', 'Helvetica','Sans-Serif';
+    font-family:'Roboto', 'Helvetica','Sans-Serif';
     color: #660033;
 }
 h3 {
@@ -137,6 +137,14 @@ ul.posts li {
   text-align: center;
 }
 
+#rcorners1 {
+  border-radius: 25px;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 320px;
+  height: 320px;
+}
 #rcorners3 {
   border-radius: 25px;
   /* background: url(YellowBioText.png); */
@@ -147,14 +155,7 @@ ul.posts li {
   width: 100px;
   height: 36px;
 }
-#rcorners1 {
-  border-radius: 25px;
-  background-position: left top;
-  background-repeat: repeat;
-  padding: 20px;
-  width: 320px;
-  height: 320px;
-}
+
 .sidenav {
   height: 100%;
   width: 160px;
@@ -188,4 +189,11 @@ ul.posts li {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('https/theatredu1k.github.io/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
