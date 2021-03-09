@@ -4,7 +4,9 @@ body {
     margin: 60px auto;
     width: 70%;
     color: black;
-    background-color:  #F7EEE2;
+    /* background-color:  #F7EEE2; */
+        background-color:  #ebebea;
+
 }
 /* nav ul, footer ul {
     font-family: 'Arial', 'Helvetica','Sans-Serif';
@@ -68,13 +70,14 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family: 'Open_Sans', 'Helvetica','Sans-Serif';
-    color: #A92323;
+    color: #5C8C9C;
 }
 
 h2 {
     font-size: 2em;
     font-family:'Coming_Soon';
-    color: #660033;
+    /* color: #660033; */
+    color: #0C0484;
 }
 
 
