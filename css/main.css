@@ -130,7 +130,7 @@ p.ex2 {
    padding: 3px;
    background-color: cornsilk1;
    color: red; */
-/* } */ 
+/* } */
 
 .footer {
    position: fixed;
@@ -213,6 +213,8 @@ ul.posts li {
 
 /* The sidebar navigation menu */
 .sidebar {
+  left: 0;
+  bottom: 0;
   margin: 0;
   padding: 0;
   width: 160px;
