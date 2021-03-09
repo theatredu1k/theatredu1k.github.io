@@ -203,7 +203,7 @@ ul.posts li {
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 160px;
   background-color: #f1f1f1;
   position: fixed;
   height: 100%;
@@ -232,7 +232,7 @@ ul.posts li {
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
-  margin-left: 200px;
+  margin-left: 160px;
   padding: 1px 16px;
   height: 1000px;
 }
