@@ -146,6 +146,7 @@ p.ex2 {
 ul.posts {
     margin: 20px auto 40px;
     font-size: 1.5em;
+    font-family: 'Lato'
 }
 
 ul.posts li {
