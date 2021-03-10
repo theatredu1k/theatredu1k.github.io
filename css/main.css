@@ -319,7 +319,7 @@ div.content {
 }
 @font-face {
     font-family: 'Karla';
-    src: url('/Karla/static/Karla-ExtraLight.ttf') format('truetype');
+    src: url('https/theatredu1k.github.io/css/Karla/static/Karla-ExtraLight.ttf') format('truetype');
     font-style: normal;
 }
 figure {
