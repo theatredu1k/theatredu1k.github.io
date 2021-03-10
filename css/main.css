@@ -5,8 +5,7 @@ body {
     width: 70%;
     color: black;
     /* background-color:  #F7EEE2; */
-    /* background-color:  #ebebea; */
-    background-color : 'grad1';
+    background-color:  #ebebea;
     font-family: 'Karla';
 
 }
@@ -319,7 +318,7 @@ div.content {
 }
 @font-face {
     font-family: 'Karla';
-    src: url('https/theatredu1k.github.io/css/Karla/static/Karla-ExtraLight.ttf') format('truetype');
+    src: url('https/theatredu1k.github.io/css/Karla/static/Karla-ExtraLight.ttf')format('truetype');
     font-style: normal;
 }
 figure {
