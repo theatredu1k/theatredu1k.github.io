@@ -242,7 +242,8 @@ ul.posts li {
 
 /* Active/current link */
 .sidebar a.active {
-  background-color: #4CAF50;
+  background-color: #AB274F;
+  /* background-color: #155263; */
   color: white;
 }
 
