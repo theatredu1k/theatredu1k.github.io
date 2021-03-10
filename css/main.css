@@ -360,7 +360,7 @@ figcaption {
   background-image: linear-gradient( #EFDECD,#AB274F);
 }
 #grad5 {
-  height: 120px;
+  height: 60px;
   background-color: red; /* For browsers that do not support gradients */
   background-image: linear-gradient( #EFDECD,#AB274F);
 }
