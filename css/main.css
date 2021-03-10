@@ -249,6 +249,7 @@ ul.posts li {
 
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
+  background-color: #AB274F;
   background-color: #555;
   color: white;
 }
