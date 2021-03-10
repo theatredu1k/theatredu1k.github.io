@@ -313,7 +313,7 @@ div.content {
 
 @font-face {
     font-family: 'Lato';
-    src: url('https/theatredu1k.github.io/fonts/Lato/Lato-Thin.ttf') format('truetype');
+    src: 'https/theatredu1k.github.io/fonts/Lato/Lato-Thin.ttf' format('truetype');
     font-style: normal;
 }
 
