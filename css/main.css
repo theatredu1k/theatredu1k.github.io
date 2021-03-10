@@ -242,7 +242,7 @@ ul.posts li {
 
 /* Active/current link */
 .sidebar a.active {
-  background-color: 'grad3';
+  background-color: '#AB274F';
   /* background-color: #155263; */
   color: white;
 }
@@ -250,7 +250,7 @@ ul.posts li {
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
   background-color: #AB274F;
-  background-color: #555;
+  /* background-color: #555; */
   color: white;
 }
 
