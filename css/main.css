@@ -150,7 +150,7 @@ p.ex2 {
 ul.posts {
     margin: 20px auto 40px;
     font-size: 1em;
-    font-family: 'Lato'
+    font-family: 'Lato','Karla','Open_Sans';
 }
 
 ul.posts li {
@@ -314,10 +314,14 @@ div.content {
 
 @font-face {
     font-family: 'Lato';
-    src: 'https/theatredu1k.github.io/fonts/Lato/Lato-Thin.ttf' format('truetype');
+    src: url('https/theatredu1k.github.io/fonts/Lato/Lato-Thin.ttf') format('truetype');
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'Karla';
+    src: url('https/theatredu1k.github.io/fonts/Karla/static/Karla-ExtraLight.ttf') format('truetype');
+    font-style: normal;
+}
 figure {
   border-top: none;
   padding-top: 0;
