@@ -326,3 +326,8 @@ figcaption {
   border: thin silver solid;
   border-bottom: none;
 }
+#grad1 {
+  height: 960;px
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#EFDECD, #CD2682);
+}
