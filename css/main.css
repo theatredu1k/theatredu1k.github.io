@@ -91,8 +91,8 @@ h3 {
 }
 p {
     font-family:'Lato';
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 1em;
+    line-height: 1em;
     color: #333;
 }
 ps {
@@ -258,7 +258,7 @@ div.content {
   padding: 1px 16px;
   height: 1000px;
   font-family: 'Karla';
-  font-size: 12px;
+  font-size: 16px;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
