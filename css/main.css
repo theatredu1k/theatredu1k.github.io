@@ -287,8 +287,7 @@ div.content {
 @font-face {
     font-family: 'Roboto';
     src: url('Roboto/Roboto-Regular.ttf') format('truetype');
-
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 @font-face {
@@ -315,12 +314,13 @@ div.content {
 
 @font-face {
     font-family: 'Lato';
-    src: url('Lato/Lato-Thin.ttf') format('truetype');
+    src: url('Lato/Lato-Regular.ttf') format('truetype');
     font-style: normal;
+    font-weight: bold;
 }
 @font-face {
     font-family: 'Karla';
-    src: url('Karla/static/Karla-ExtraLight.ttf')format('truetype');
+    src: url('Karla/static/Karla-Light.ttf')format('truetype');
 
     font-style: normal;
 
