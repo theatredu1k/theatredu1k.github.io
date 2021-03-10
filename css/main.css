@@ -316,3 +316,13 @@ div.content {
     src: url('https/theatredu1k.github.io/fonts/Lato/Lato-Thin.ttf') format('truetype');
     font-style: normal;
 }
+
+figure {
+  border-top: none;
+  padding-top: 0;
+}
+figcaption {
+  padding: 0.5em;
+  border: thin silver solid;
+  border-bottom: none;
+}
