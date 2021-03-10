@@ -164,9 +164,9 @@ ul.posts li {
 
 #rcorners1 {
   border-radius: 9px;
+  background: #AB274F ;
   background-position: left top;
   background-repeat: repeat;
-  background: #AB274F ;
   padding: 20px;
   width: 160px;
   height: 160px;
