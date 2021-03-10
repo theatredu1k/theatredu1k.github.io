@@ -242,7 +242,7 @@ ul.posts li {
 
 /* Active/current link */
 .sidebar a.active {
-  background-color: #AB274F;
+  background-color: 'grad3';
   /* background-color: #155263; */
   color: white;
 }
