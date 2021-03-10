@@ -70,14 +70,15 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family: 'Lato', 'Helvetica','Sans-Serif';
-    color: #5C8C9C;
+    color: tomato;
 }
 
 h2 {
     font-size: 2em;
     font-family:'Roboto';
     /* color: #660033; */
-    color: tomato;
+    color: #5C8C9C;
+
 }
 
 
