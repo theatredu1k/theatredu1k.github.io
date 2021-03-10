@@ -344,7 +344,7 @@ figcaption {
 }
 #grad3 {
   height: 640px;
-  background-color: red; /* For browsers that do not support gradients */
+  background-color: lightblue; /* For browsers that do not support gradients */
   background-image: linear-gradient( #EFDECD,#155263);
 }
 #grad4 {
