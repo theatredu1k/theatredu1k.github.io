@@ -39,7 +39,7 @@ function setup() {
  // var button = select('#loadfile');
   button = createButton('loadFile');
   button.mousePressed(loadFile);
-  console.log(txt);
+  // console.log(txt);
 
   //reload the html
   var resetButton = createButton("reset");
