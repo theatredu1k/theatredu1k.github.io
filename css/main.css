@@ -5,7 +5,8 @@ body {
     width: 70%;
     color: black;
     /* background-color:  #F7EEE2; */
-        background-color:  #ebebea;
+    background-color:  #ebebea;
+    font-family: 'Karla'
 
 }
 /* nav ul, footer ul {
@@ -141,6 +142,7 @@ p.ex2 {
    background-color:  cornsilk1;
    color: Darkcyan;
    text-align: center;
+   font-family: 'Karla';
 }
 
 
@@ -152,6 +154,7 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+    font-family: 'Karla';
 }
 .myDiv {
   border: 5px outset red;
@@ -224,6 +227,7 @@ ul.posts li {
   position: fixed;
   height: 100%;
   overflow: auto;
+  font-family: 'Karla';
 }
 
 /* Sidebar links */
@@ -253,6 +257,7 @@ div.content {
   margin-left: 160px;
   padding: 1px 16px;
   height: 1000px;
+  font-family: 'Karla';
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
