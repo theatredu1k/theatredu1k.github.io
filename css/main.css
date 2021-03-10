@@ -336,21 +336,21 @@ figcaption {
   border-bottom: none;
 }
 #grad1 {
-  height: 960;px
+  height: 1080px
   background-color: red; /* For browsers that do not support gradients */
   background-image: linear-gradient(#EFDECD, #CD2682);
 }
 #grad2 {
-  height: 960px;
+  height: 1080px;
   background-image: linear-gradient(to bottom, rgba(255,135,0,0), rgba(255,135,0,1));
 }
 #grad3 {
-  height: 960px;
+  height: 1080px;
   background-color: lightblue; /* For browsers that do not support gradients */
   background-image: linear-gradient( #EFDECD,#155263);
 }
 #grad4 {
-  height: 960px;
+  height: 100%;
   background-color: red; /* For browsers that do not support gradients */
   background-image: linear-gradient( #EFDECD,#AB274F);
 }
