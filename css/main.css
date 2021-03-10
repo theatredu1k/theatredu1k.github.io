@@ -5,7 +5,8 @@ body {
     width: 70%;
     color: black;
     /* background-color:  #F7EEE2; */
-    background-color:  #ebebea;
+    /* background-color:  #ebebea; */
+    bacground-color : 'grad1';
     font-family: 'Karla';
 
 }
