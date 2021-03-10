@@ -238,6 +238,7 @@ ul.posts li {
   padding: 6px 8px 6px 16px;
   font-size: 1em;
   text-decoration: none;
+  background-color: #FFBF00;
 }
 
 /* Active/current link */
