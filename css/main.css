@@ -1,8 +1,8 @@
 
 
 body {
-    margin: 72px auto;
-    width: 72%;
+    margin: 24px auto;
+    width: 80%;
     color: black;
     /* background-color:  #F7EEE2; */
     background-color:  #ebebea;
@@ -224,7 +224,7 @@ ul.posts li {
   bottom: 0;
   margin: 0;
   padding: 0;
-  width: 150px;
+  width: 120px;
   background-color: #f1f1f1;
   position: fixed;
   height: 100%;
@@ -262,8 +262,8 @@ ul.posts li {
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
   position:relative;
-  margin-left: 150px;
-  padding: 1px 16px;
+  margin-left: 120px;
+  padding: 1px 16px
   font-family: 'Karla';
   font-size: 16px;
   /* height: auto; */
