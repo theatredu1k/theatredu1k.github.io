@@ -304,7 +304,7 @@ ul.posts li {
 
 /* Optional: Style the caret down icon */
 .fa-caret-down {
-  float: right;
+  float: left;
   padding-right: 8px;
 }
 
