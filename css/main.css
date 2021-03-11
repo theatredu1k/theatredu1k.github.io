@@ -340,6 +340,7 @@ figure {
 figcaption {
   padding: 0.5em;
   border: thin silver solid;
+  font-size: 9px;
   /* border-bottom: none; */
 }
 #grad1 {
