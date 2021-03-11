@@ -198,6 +198,7 @@ background: linear-gradient(to right,#ccffff,#003366,#FFFFCC);
   height: 320px;
 }
 #rcorners4 {
+    /* nature */
   border-radius:9px;
   /* background: url(YellowBioText.png); */
   /* background: linear-gradient(#155263,#EFDECD); */
@@ -205,11 +206,12 @@ background: linear-gradient(to right,#ccffff,#003366,#FFFFCC);
   background-position: left top;
   background-repeat: repeat;
   padding: 20px;
-  width: 80px;
-  height: 160px;
+  width: 260px;
+  height: 65px;
 }
 
 #rcorners5 {
+  /* read */
   border-radius:9px;
   /* background: url(YellowBioText.png); */
   /* background: linear-gradient(#155263,#EFDECD); */
@@ -217,8 +219,8 @@ background: linear-gradient(to right,#ccffff,#003366,#FFFFCC);
   background-position: left top;
   background-repeat: repeat;
   padding: 20px;
-  width: 160px;
-  height: 80px;
+  width: 65px;
+  height: 190px;
 }
 
 .sidenav {
