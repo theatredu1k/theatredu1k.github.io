@@ -215,11 +215,11 @@ background: linear-gradient(to right,#ccffff,#003366,#FFFFCC);
   border-radius:9px;
   /* background: url(YellowBioText.png); */
   /* background: linear-gradient(#155263,#EFDECD); */
-  background: linear-gradient(to right, #C9C9AF , #ffffcc);
+  background: linear-gradient(to right, #333300 , #ffffcc);
   background-position: left top;
   background-repeat: repeat;
   padding: 20px;
-  width: 65px;
+  width: 90px;
   height: 190px;
 }
 
