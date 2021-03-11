@@ -175,12 +175,12 @@ ul.posts li {
   height: 120px;
 }
 #rcorners2 {
-  border-radius:9px;
+  border-radius:0.5em;
   /* background: url(YellowBioText.png); */
   background: #FFBF00 ;
   background-position: left top;
   background-repeat: repeat;
-  padding: 12px;
+  padding: 20px;
   width: 120px;
   height: auto;
 }
