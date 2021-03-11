@@ -412,7 +412,7 @@ figcaption {
 }
 #grad1 {
   height: 1080px
-  background-color: red; /* For browsers that do not support gradients */
+  background-color: white; /* For browsers that do not support gradients */
   background-image: linear-gradient(#EFDECD, #CD2682);
 }
 #grad2 {
@@ -426,11 +426,11 @@ figcaption {
 }
 #grad4 {
   height: 1080px;
-  background-color: red; /* For browsers that do not support gradients */
+  background-color: white; /* For browsers that do not support gradients */
   background-image: linear-gradient( #EFDECD,#AB274F);
 }
 #grad5 {
   height: 120px;
-  background-color: red; /* For browsers that do not support gradients */
+  background-color: white; /* For browsers that do not support gradients */
   background-image: linear-gradient( #EFDECD,#AB274F);
 }
