@@ -293,12 +293,12 @@ ul.posts li {
 /* On mouse-over */
 .sidebar a:hover, .dropdown-btn:hover {
   color: #f1f1f1;
-  background:#155263; 
+  background:#AB274F;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
-  display: none;
+  /* display: none; */
   background-color: #FFBF00;
   padding-left: 8px;
 }
