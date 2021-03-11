@@ -265,7 +265,7 @@ div.content {
   padding: 1px 16px;
   font-family: 'Karla';
   font-size: 16px;
-  height: auto;
+  /* height: auto; */
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
