@@ -266,7 +266,7 @@ div.content {
   /* : 320px; */
   font-family: 'Karla';
   font-size: 16px;
-  height: 1000px;
+  /* height: 1000px; */
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
