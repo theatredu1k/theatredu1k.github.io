@@ -227,7 +227,7 @@ ul.posts li {
   width: 160px;
   background-color: #f1f1f1;
   position: fixed;
-  : 100%;
+  height: 100%;
   overflow: auto;
   font-family: 'Karla';
 }
@@ -263,10 +263,9 @@ ul.posts li {
 div.content {
   margin-left: 160px;
   padding: 1px 16px;
-  /* : 320px; */
   font-family: 'Karla';
   font-size: 16px;
-  /* height: 1000px; */
+  height: auto;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
