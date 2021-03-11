@@ -233,14 +233,15 @@ ul.posts li {
 
 /* The sidebar navigation menu */
 .sidebar {
+  height: 100%;
+  width: 120px;
+  position: fixed;
+  top: 0;
   left: 0;
   bottom: 0;
   margin: 0;
-  padding: 0;
-  width: 120px;
+  padding-top: 20px;
   background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
   overflow: auto;
   font-family: 'Karla';
 }
@@ -270,6 +271,34 @@ ul.posts li {
 
   /* background-color: #555; */
   color: white;
+}
+
+
+/* Style the sidenav links and the dropdown button */
+.sidebar a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidebar a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
 }
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
