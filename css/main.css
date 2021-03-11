@@ -261,6 +261,7 @@ ul.posts li {
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
+  position:relative;
   margin-left: 150px;
   padding: 1px 16px;
   font-family: 'Karla';
