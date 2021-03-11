@@ -59,7 +59,8 @@ function bnorm(floatVal, low=0, high=255){return Math.round(floatVal*(high - low
 
 function setup() {
 
-  createCanvas(640,480)
+  // createCanvas(640,480)
+  nocanvas();
 
   colorMode(HSB)
 	//background(74,100,100)
