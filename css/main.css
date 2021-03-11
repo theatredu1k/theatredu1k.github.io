@@ -192,7 +192,7 @@ ul.posts li {
   background-repeat: repeat;
   padding: 20px;
   width: 320px;
-  height: auto;
+  height: 320px;
 }
 #rcorners4 {
   border-radius:9px;
