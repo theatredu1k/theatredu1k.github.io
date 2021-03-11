@@ -2,7 +2,7 @@
 
 body {
     margin-left: 72px auto;
-    width: 80%;
+    width: 100%;
     color: black;
     /* background-color:  #F7EEE2; */
     background-color:  #ebebea;
@@ -170,7 +170,7 @@ ul.posts li {
   background-repeat: repeat;
   padding: 20px;
   width: 120px;
-  : 120px;
+  height: 120px;
 }
 #rcorners3 {
   border-radius:9px;
@@ -180,7 +180,7 @@ ul.posts li {
   background-repeat: repeat;
   padding: 20px;
   width: 320px;
-  : 320px;
+  height: 320px;
 }
 
 .sidenav {
