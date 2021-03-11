@@ -167,7 +167,7 @@ ul.posts li {
 
 #rcorners1 {
   border-radius: 9px;
-  background: linear-gradient(#99C1DE,#EFDECD);
+  background: linear-gradient(to right,#99C1DE,#EFDECD);
   background-position: left top;
   background-repeat: repeat;
   padding: 20px;
