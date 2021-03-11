@@ -247,15 +247,15 @@ ul.posts li {
 }
 
 /* Sidebar links */
-.sidebar a {
-  display: block;
-  color: black;
+/* .sidebar a { */
+  /* display: block;
+  color: black; */
   /* padding: 1px; */
-  padding: 6px 8px 6px 16px;
+  /* padding: 6px 8px 6px 16px;
   font-size: 1em;
-  text-decoration: none;
+  text-decoration: none; */
   /* background-color: #FFBF00; */
-}
+/* } */
 
 /* Active/current link */
 .sidebar a.active {
@@ -274,11 +274,12 @@ ul.posts li {
 }
 
 
-/* Style the sidenav links and the dropdown button */
+/* Style the sidenav links and the dropdown button
+.sidebar a, .dropdown-btn {*/
 .sidebar a, .dropdown-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1em;
   color: #818181;
   display: block;
   border: none;
