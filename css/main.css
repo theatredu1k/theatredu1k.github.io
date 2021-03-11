@@ -2,7 +2,7 @@
 
 body {
     margin: 72px, auto;
-    width: 65%;
+    width: 72%;
     color: black;
     /* background-color:  #F7EEE2; */
     background-color:  #ebebea;
@@ -102,7 +102,7 @@ ps {
     color: #333;
 }
 p.ex1 {
-  align="right";
+  align="center";
   line-: 1em;
   padding-left: 100px;
 }
@@ -184,7 +184,7 @@ ul.posts li {
 }
 
 .sidenav {
-  : 100%;
+  height: 100%;
   width: 160px;
   position: fixed;
   z-index:1;
