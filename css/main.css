@@ -279,7 +279,7 @@ ul.posts li {
 .sidebar a, .dropdown-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 1em;
+  font-family: 'Karla';
   color: #155263;
   display: block;
   border: none;
@@ -294,11 +294,12 @@ ul.posts li {
 .sidebar a:hover, .dropdown-btn:hover {
   color: #f1f1f1;
   background:#AB274F;
+  /* purple */
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
-  /* display: none; */
+  display: none;
   background-color: #FFBF00;
   padding-left: 8px;
 }
