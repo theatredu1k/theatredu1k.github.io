@@ -1,7 +1,7 @@
 
 
 body {
-    margin-left: 72px auto;
+    margin: 72px auto;
     width: 100%;
     color: black;
     /* background-color:  #F7EEE2; */
@@ -94,7 +94,7 @@ p {
     font-size: 1em;
     line-: 1em;
     color: #333;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 ps {
     font-size: 1em;
