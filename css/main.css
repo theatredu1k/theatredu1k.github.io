@@ -200,7 +200,8 @@ background: linear-gradient(to right,#ccffff,#003366,#FFFFCC);
 #rcorners4 {
   border-radius:9px;
   /* background: url(YellowBioText.png); */
-  background: linear-gradient(#155263,#EFDECD);
+  /* background: linear-gradient(#155263,#EFDECD); */
+  background: linear-gradient(#EFDECD, #336600);
   background-position: left top;
   background-repeat: repeat;
   padding: 20px;
