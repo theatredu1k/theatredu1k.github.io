@@ -279,7 +279,6 @@ ul.posts li {
 .sidebar a, .dropdown-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-family: 'Karla';
   font-size: 1em;
   color: #155263;
   display: block;
@@ -295,6 +294,7 @@ ul.posts li {
 .sidebar a:hover, .dropdown-btn:hover {
   color: #f1f1f1;
   background:#AB274F;
+  font-size: 1em;
   /* purple */
 }
 
