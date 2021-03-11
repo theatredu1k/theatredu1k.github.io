@@ -169,8 +169,8 @@ ul.posts li {
   border-radius: 9px;
   /* background: linear-gradient(to right,#99C1DE,#EFDECD); */
     /* background: linear-gradient(to right,#063970,#EFDECD); */
-    background: linear-gradient(to right,#ccffff,#660033,#FFFFCC);
-
+    /* background: linear-gradient(to right,#ccffff,#660033,#FFFFCC); */
+background: linear-gradient(to right,#ccffff,#003366,#FFFFCC);
   background-position: left top;
   background-repeat: repeat;
   padding: 20px;
