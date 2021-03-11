@@ -197,12 +197,12 @@ ul.posts li {
 #rcorners4 {
   border-radius:9px;
   /* background: url(YellowBioText.png); */
-  background: linear-gradient( #EFDECD,#155263);
+  background: linear-gradient(#EFDECD,#155263);
   background-position: left top;
   background-repeat: repeat;
   padding: 20px;
-  width: 160px;
-  height: 320px;
+  width: 80px;
+  height: 160px;
 }
 
 
