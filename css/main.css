@@ -280,7 +280,7 @@ ul.posts li {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 1em;
-  color: #818181;
+  color: #155263;
   display: block;
   border: none;
   background: none;
@@ -298,14 +298,14 @@ ul.posts li {
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
-  background-color: #262626;
+  background-color: #FFBF00;
   padding-left: 8px;
 }
 
 /* Optional: Style the caret down icon */
 .fa-caret-down {
-  float: left;
-  padding-right: 8px;
+  float: right;
+  padding-right: 2px;
 }
 
 
