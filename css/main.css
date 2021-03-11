@@ -1,6 +1,7 @@
 
 
 body {
+  /* margin 72 width 72% is working with sidebar 150 div content position relative */
     margin: 72px auto;
     width: 72%;
     color: black;
@@ -71,6 +72,7 @@ a:hover {
 h1 {
     font-size: 36px;
     font-family: 'Lato', 'Helvetica','Sans-Serif';
+    /* font-weight: bold; */
     color: tomato;
 }
 
