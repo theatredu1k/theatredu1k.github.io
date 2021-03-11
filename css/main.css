@@ -1,7 +1,7 @@
 
 
 body {
-    margin-left: 48px auto;
+    margin-left: 72px auto;
     width: 100%;
     color: black;
     /* background-color:  #F7EEE2; */
@@ -92,23 +92,23 @@ h3 {
 p {
     font-family:'Lato';
     font-size: 1em;
-    line-height: 1em;
+    line-: 1em;
     color: #333;
     /* margin-left: 20px; */
 }
 ps {
     font-size: 1em;
-    line-height: 0.8em;
+    line-: 0.8em;
     color: #333;
 }
 p.ex1 {
   align="right";
-  line-height: 1em;
+  line-: 1em;
   padding-left: 100px;
 }
 p.ex2 {
   align="right";
-  line-height: 0.5em;
+  line-: 0.5em;
   padding-left: 100px;
 }
 
@@ -128,7 +128,7 @@ p.ex2 {
    text-align: center;
    bottom:0;
    width:100%;
-   height:60px;   /* Height of the footer */
+   :60px;   /*  of the footer */
    /* background:#6cf;
    padding: 3px;
    background-color: cornsilk1;
@@ -170,7 +170,7 @@ ul.posts li {
   background-repeat: repeat;
   padding: 20px;
   width: 120px;
-  height: 120px;
+  : 120px;
 }
 #rcorners3 {
   border-radius:9px;
@@ -180,11 +180,11 @@ ul.posts li {
   background-repeat: repeat;
   padding: 20px;
   width: 320px;
-  height: 320px;
+  : 320px;
 }
 
 .sidenav {
-  height: 100%;
+  : 100%;
   width: 160px;
   position: fixed;
   z-index:1;
@@ -213,7 +213,7 @@ ul.posts li {
   padding: 0px 10px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
@@ -227,7 +227,7 @@ ul.posts li {
   width: 160px;
   background-color: #f1f1f1;
   position: fixed;
-  height: 100%;
+  : 100%;
   overflow: auto;
   font-family: 'Karla';
 }
@@ -263,7 +263,7 @@ ul.posts li {
 div.content {
   margin-left: 160px;
   padding: 1px 16px;
-  height: 320px;
+  : 320px;
   font-family: 'Karla';
   font-size: 16px;
 }
@@ -272,7 +272,7 @@ div.content {
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 80%;
-    height: auto;
+    : auto;
     position: relative;
   }
   .sidebar a {float: left;}
@@ -339,29 +339,29 @@ figure {
 figcaption {
   padding: 0.5em;
   border: thin silver solid;
-  border-bottom: none;
+  /* border-bottom: none; */
 }
 #grad1 {
-  height: 1080px
+  : 1080px
   background-color: red; /* For browsers that do not support gradients */
   background-image: linear-gradient(#EFDECD, #CD2682);
 }
 #grad2 {
-  height: 1080px;
+  : 1080px;
   background-image: linear-gradient(to bottom, rgba(255,135,0,0), rgba(255,135,0,1));
 }
 #grad3 {
-  height: 1080px;
+  : 1080px;
   background-color: lightblue; /* For browsers that do not support gradients */
   background-image: linear-gradient( #EFDECD,#155263);
 }
 #grad4 {
-  height: 1080px;
+  : 1080px;
   background-color: red; /* For browsers that do not support gradients */
   background-image: linear-gradient( #EFDECD,#AB274F);
 }
 #grad5 {
-  height: 120px;
+  : 120px;
   background-color: red; /* For browsers that do not support gradients */
   background-image: linear-gradient( #EFDECD,#AB274F);
 }
