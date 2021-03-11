@@ -172,6 +172,16 @@ ul.posts li {
   width: 120px;
   height: 120px;
 }
+#rcorners2 {
+  border-radius:9px;
+  /* background: url(YellowBioText.png); */
+  background: #FFBF00 ;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 0.5em;
+  width: 320px;
+  height: auto;
+}
 #rcorners3 {
   border-radius:9px;
   /* background: url(YellowBioText.png); */
@@ -182,6 +192,7 @@ ul.posts li {
   width: 320px;
   height: 320px;
 }
+
 
 .sidenav {
   height: 100%;
