@@ -234,7 +234,7 @@ ul.posts li {
 /* The sidebar navigation menu */
 .sidebar {
   height: 100%;
-  width: 120px;
+  width: 140px;
   position: fixed;
   top: 0;
   left: 0;
@@ -304,7 +304,7 @@ ul.posts li {
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
   position:relative;
-  margin-left: 120px;
+  margin-left: 140px;
   padding: 1px 16px
   font-family: 'Karla';
   font-size: 16px;
