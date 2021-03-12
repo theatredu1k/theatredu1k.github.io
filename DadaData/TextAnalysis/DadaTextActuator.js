@@ -10,8 +10,7 @@ let canvas;
 // end variables for draw230ct20
 
 function loadFile() {
-  txt= '/DadaBlabla/dataset/dadaDay.txt';
-
+  txt= '/DadaBlabla/DadaNLP/dataset/dadaDay.txt';
   loadStrings(txt, fileLoaded);
 }
 
