@@ -1,5 +1,3 @@
-// coding animated shapes training
-
 var txt;
 // variables Draw everything into a pGraphics object.
 
@@ -10,13 +8,15 @@ let canvas;
 // end variables for draw230ct20
 
 function loadFile() {
-  txt= '../dataset/dadaDay.txt';
+  txt= 'dadaPoem.txt';
   loadStrings(txt, fileLoaded);
 }
 
 function fileLoaded(data) {
 //  txt = data;
   createP(join(data, '<br/>'));
+
+
 }
 
 function fileSelected(file) {//read data from the file object : name, size, type
@@ -35,16 +35,13 @@ function setup() {
   createCanvas(320,240);
   createFileInput(fileSelected);
   paragraph=createP('©Theatredu1k '+day()+month()+year());
-  var button = select('#fichier');
-  // button = createButton('loadFile');
+  var button = select('#loadfile');
   button.mousePressed(loadFile);
-
   // console.log(txt);
 
   //reload the html
   var resetButton = createButton("reset");
   resetButton.mousePressed(resetSketch);
-
   function resetSketch(){
   window.location.reload(false);
   }
