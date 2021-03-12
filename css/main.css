@@ -451,3 +451,6 @@ figcaption {
   background-color: white; /* For browsers that do not support gradients */
   background-image: linear-gradient( #EFDECD,#AB274F);
 }
+.newspaper1 {
+  columns: 100px 3;
+}
