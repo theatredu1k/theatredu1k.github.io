@@ -10,7 +10,7 @@ let canvas;
 // end variables for draw230ct20
 
 function loadFile() {
-  txt= 'dadaPoem.txt';
+  txt= '../dataset/dadaDay.txt';
   loadStrings(txt, fileLoaded);
 }
 
