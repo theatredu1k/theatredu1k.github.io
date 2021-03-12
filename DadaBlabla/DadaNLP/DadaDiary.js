@@ -11,7 +11,7 @@ let canvas;
 
 function loadFile() {
   txt= '../dataset/dadaDay.txt';
-  loadStrings(txt, fileLoaded);
+  loadStrings(txt, fileLoaded(txt));
 }
 
 function fileLoaded(data) {
@@ -44,6 +44,7 @@ function setup() {
   //reload the html
   var resetButton = createButton("reset");
   resetButton.mousePressed(resetSketch);
+
   function resetSketch(){
   window.location.reload(false);
   }
