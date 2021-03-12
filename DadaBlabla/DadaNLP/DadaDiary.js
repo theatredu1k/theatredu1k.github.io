@@ -32,17 +32,16 @@ function fileSelected(file) {//read data from the file object : name, size, type
 }
 
 function setup() {
-  createCanvas(320,240);
-  createFileInput(fileSelected);
-  paragraph=createP('©Theatredu1k '+day()+month()+year());
+  createCanvas(320,240);//starting canvas here
+  // this is coming after the canvas where the drawings will happen
+//in order
+  createFileInput(fileSelected);// choose file
   button = createButton('loadFile');
   button.mousePressed(loadFile);
-
-  // console.log(txt);
-
   //reload the html
   var resetButton = createButton("reset");
   resetButton.mousePressed(resetSketch);
+  paragraph=createP('©Theatredu1k '+day()+month()+year());
 
   function resetSketch(){
   window.location.reload(false);
