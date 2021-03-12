@@ -215,7 +215,7 @@ background: linear-gradient(to right,#ccffff,#003366,#FFFFCC);
   border-radius:9px;
   /* background: url(YellowBioText.png); */
   /* background: linear-gradient(#155263,#EFDECD); */
-  background: linear-gradient(to right, #333300 , #ffffcc);
+  background: linear-gradient(to right, black , #ffffcc);
   background-position: left top;
   background-repeat: repeat;
   padding: 20px;
