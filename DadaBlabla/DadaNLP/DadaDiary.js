@@ -35,7 +35,6 @@ function setup() {
   createCanvas(320,240);
   createFileInput(fileSelected);
   paragraph=createP('©Theatredu1k '+day()+month()+year());
-  // var button = select('loadFile');
   button = createButton('loadFile');
   button.mousePressed(loadFile);
 
