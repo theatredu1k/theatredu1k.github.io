@@ -35,9 +35,10 @@ function setup() {
   createCanvas(320,240);
   createFileInput(fileSelected);
   paragraph=createP('©Theatredu1k '+day()+month()+year());
- // var button = select('#loadfile');
-  button = createButton('loadFile');
+  var button = select('#fichier');
+  // button = createButton('loadFile');
   button.mousePressed(loadFile);
+
   // console.log(txt);
 
   //reload the html
