@@ -11,7 +11,7 @@ let canvas;
 
 function loadFile() {
   txt= '../dataset/dadaDay.txt';
-  loadStrings(txt, fileLoaded(txt));
+  loadStrings(txt, fileLoaded);
 }
 
 function fileLoaded(data) {
