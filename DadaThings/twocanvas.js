@@ -8,14 +8,14 @@ var ding;
 var interval = false;
 
 // Convert seconds to min:sec
-p.convertSeconds(s) = function() {
+function convertSeconds(s){
 	var min = floor(s / 60);
 	var sec = s % 60;
 	return nf(min, 2) + ':' + nf(sec, 2);
 };
 
 p.preload() = function() {
-	ding = p.loadSound("ding.mp3");
+	ding = loadSound("ding.mp3");
 };
 
 // Set value of the DOM element
@@ -25,7 +25,7 @@ p.timerText(text) = function() {
 };
 
 // Stop the timer
-p.stopTimer()= function()  {
+stopTimer()= function()  {
 	clearInterval(interval);
 	interval = false;
 };
@@ -43,12 +43,12 @@ p.setup()= function()  {
 
 	// Set initial value for DOM element
 	// timerText(convertSeconds(timeleft) + ' (paused)');
-	p.timerText(convertSeconds(timeleft));
+	timerText(convertSeconds(timeleft));
 
 	// Timer interval
-	p.timeIt() = function(){
+	timeIt() = function(){
 		timeleft--;
-		p.timerText(convertSeconds(timeleft));
+		timerText(convertSeconds(timeleft));
 
 		// Time's up
 		if (timeleft <= 0) {
@@ -60,7 +60,7 @@ p.setup()= function()  {
 				if(dingcount == 10) clearInterval(dinginterval);
 			}, 100);
 			//ding.play();
-			p.stopTimer();
+			stopTimer();
 		}
 	};
 
@@ -73,30 +73,30 @@ p.setup()= function()  {
 	// p.pausebtn.mousePressed(pause);
 
 	// Function when set timer btn is pressed
-	p.setTimer() = function(){
+	function setTimer(){
 		var entered = prompt('Enter the amount of minutes');
 
-		if(!p.isNaN(entered) && entered >= 1) {
-			p.stopTimer();
+		if(!isNaN(entered) && entered >= 1) {
+			stopTimer();
 			timeleft = entered * 60;
 			//timerText(convertSeconds(timeleft) + ' (paused)');
-			p.timerText(convertSeconds(timeleft));
+			timerText(convertSeconds(timeleft));
 		}
 	};
 
 	// When pause btn is pressed
-	p.pause() = function() {
+	function pause(){
 		if(!interval) {
 			if(timeleft <= 0) return alert('No time set!');
 
-			p.timerText(convertSeconds(timeleft));
+			timerText(convertSeconds(timeleft));
 			interval = setInterval(timeIt, 1000);
 		}
 		else
 		{
 			// timerText(convertSeconds(timeleft) + ' (paused)');
-			p.timerText(convertSeconds(timeleft));
-			p.stopTimer();
+			timerText(convertSeconds(timeleft));
+			stopTimer();
 		}
 	};
 };// end p setup timer
