@@ -177,6 +177,7 @@ background: linear-gradient(to right,#ccffff,#003366,#FFFFCC);
   width: auto;
   height: auto;
 }
+
 #rcorners2 {
   border-radius:0.5em;
   /* background: url(YellowBioText.png); */
@@ -198,7 +199,20 @@ background: linear-gradient(to right,#ccffff,#003366,#FFFFCC);
   width: 320px;
   height: 320px;
 }
-#rcorners4 {
+#totem4 {
+  /* trend */
+  border-radius: 9px;
+  /* background: linear-gradient(to right,#99C1DE,#EFDECD); */
+    /* background: linear-gradient(to right,#063970,#EFDECD); */
+    /* background: linear-gradient(to right,#ccffff,#660033,#FFFFCC); */
+background: linear-gradient(to right,#ccffff,#003366,#FFFFCC);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 90;
+  height: 190;
+}
+#totem3{
     /* nature */
   border-radius:9px;
   /* background: url(YellowBioText.png); */
@@ -211,7 +225,7 @@ background: linear-gradient(to right,#ccffff,#003366,#FFFFCC);
   height: 190px;
 }
 
-#rcorners5 {
+#totem2 {
   /* read */
   border-radius:9px;
   /* background: url(YellowBioText.png); */
@@ -223,8 +237,8 @@ background: linear-gradient(to right,#ccffff,#003366,#FFFFCC);
   width: 90px;
   height: 190px;
 }
-#rcorners6 {
-  /* titre totem  */
+#totem1 {
+  /* image  */
   border-radius:9px;
   /* background: url(YellowBioText.png); */
   background: linear-gradient(#FFBF00,#EFDECD) ;
