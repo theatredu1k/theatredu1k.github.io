@@ -38,3 +38,41 @@ var t = function( p ) {
   };
 };
 var myp5 = new p5(t, 'c2');
+
+
+// Sketch Three
+// ----------------------------------------------------
+var u = function( p ) {var timeleft = 300;
+var ding;
+var interval = false;
+
+// Convert seconds to min:sec
+function convertSeconds(s) {
+	var min = floor(s / 60);
+	var sec = s % 60;
+	return nf(min, 2) + ':' + nf(sec, 2);
+}
+
+function preload() {
+	ding = loadSound("ding.mp3");
+}
+
+
+  p.setup = function() {
+    p.createCanvas(400, 200);
+    // Process URL ?minute=
+    var params = getURLParams();
+    if (params.minute) {
+      var min = params.minute;
+      timeleft = min * 60;
+    }
+
+    // Set initial value for DOM element
+    // timerText(convertSeconds(timeleft) + ' (paused)');
+    timerText(convertSeconds(timeleft));
+
+  };
+
+
+};
+var myp5 = new p5(u, 'c3');
