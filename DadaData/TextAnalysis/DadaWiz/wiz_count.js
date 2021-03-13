@@ -3,8 +3,9 @@ let txt;
 let keys =[];// array
 let counts = {}; // object
 function preload (){
-  txt = loadStrings('../DadaBlabla/dataset/Thesis/PostDigital Textile and Puppetry.txt');
+  txt = loadStrings('/DadaBlabla/dataset/Thesis/PostDigital Textile and Puppetry.txt');
   // txt = loadStrings('../dataset/dadaPoem.txt');
+//txt= '/DadaBlabla/DadaNLP/dataset/dadaDay.txt';
 
 }
 
