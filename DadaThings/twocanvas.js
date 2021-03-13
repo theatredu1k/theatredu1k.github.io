@@ -48,7 +48,7 @@ var interval = false;
 
 // Convert seconds to min:sec
 function convertSeconds(s) {
-	var min = floor(s / 60);
+	var min = p.floor(s / 60);
 	var sec = s % 60;
 	return nf(min, 2) + ':' + nf(sec, 2);
 }
