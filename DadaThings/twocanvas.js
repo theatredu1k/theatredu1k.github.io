@@ -50,21 +50,21 @@ var interval = false;
 function convertSeconds(s) {
 	var min = p.floor(s / 60);
 	var sec = s % 60;
-	return nf(min, 2) + ':' + nf(sec, 2);
+	return p.nf(min, 2) + ':' + p.nf(sec, 2);
 }
 
 function preload() {
-	ding = loadSound("ding.mp3");
+	ding = p.loadSound("ding.mp3");
 }
 // Set value of the DOM element
 function timerText(text) {
-	var timer = select('#timer');
+	var timer = p.select('#timer');
 	timer.html(text);
 }
 
 // Stop the timer
 function stopTimer() {
-	clearInterval(interval);
+	p.clearInterval(interval);
 	interval = false;
 }
 
@@ -91,10 +91,10 @@ function stopTimer() {
       if (timeleft <= 0) {
         // Ding spam
         var dingcount = 0;
-        var dinginterval = setInterval(function() {
+        var dinginterval = p.setInterval(function() {
           ding.play();
           dingcount++;
-          if(dingcount == 10) clearInterval(dinginterval);
+          if(dingcount == 10) p.clearInterval(dinginterval);
         }, 100);
         //ding.play();
         stopTimer();
@@ -102,16 +102,16 @@ function stopTimer() {
     }
 
     	// Set timer button
-    	timerbtn = createButton('set timer');
+    	timerbtn = p.createButton('set timer');
     	timerbtn.mousePressed(setTimer);
 
     	// Pause button
-    	pausebtn = createButton('pause/resume');
+    	pausebtn = p.createButton('pause/resume');
     	pausebtn.mousePressed(pause);
 
     	// Function when set timer btn is pressed
     	function setTimer() {
-    		var entered = prompt('Enter the amount of minutes');
+    		var entered = p.prompt('Enter the amount of minutes');
 
     		if(!isNaN(entered) && entered >= 1) {
     			stopTimer();
@@ -127,7 +127,7 @@ function stopTimer() {
     			if(timeleft <= 0) return alert('No time set!');
 
     			timerText(convertSeconds(timeleft));
-    			interval = setInterval(timeIt, 1000);
+    			interval = p.setInterval(timeIt, 1000);
     		}
     		else
     		{
