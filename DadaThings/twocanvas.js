@@ -14,12 +14,12 @@ function convertSeconds(s){
 	return nf(min, 2) + ':' + nf(sec, 2);
 };
 
-p.preload() = function() {
+function preload(){
 	ding = loadSound("ding.mp3");
 };
 
 // Set value of the DOM element
-p.timerText(text) = function() {
+function timerText(text){
 	var timer = select('#timer');
 	timer.html(text);
 };
