@@ -25,7 +25,7 @@ function timerText(text){
 };
 
 // Stop the timer
-stopTimer()= function()  {
+function stopTimer(){
 	clearInterval(interval);
 	interval = false;
 };
