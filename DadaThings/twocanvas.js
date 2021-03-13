@@ -61,7 +61,7 @@ function preload() {
   p.setup = function() {
     p.createCanvas(400, 200);
     // Process URL ?minute=
-    var params = getURLParams();
+    var params = p.getURLParams();
     if (params.minute) {
       var min = params.minute;
       timeleft = min * 60;
