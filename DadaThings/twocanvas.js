@@ -46,7 +46,7 @@ p.setup()= function()  {
 	timerText(convertSeconds(timeleft));
 
 	// Timer interval
-	timeIt() = function(){
+	function timeIt(){
 		timeleft--;
 		timerText(convertSeconds(timeleft));
 
