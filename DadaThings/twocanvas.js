@@ -20,13 +20,13 @@ p.preload() = function() {
 
 // Set value of the DOM element
 p.timerText(text) = function() {
-	var timer = p.select('#timer');
+	var timer = select('#timer');
 	timer.html(text);
 };
 
 // Stop the timer
 p.stopTimer()= function()  {
-	p.clearInterval(interval);
+	clearInterval(interval);
 	interval = false;
 };
 
@@ -35,7 +35,7 @@ p.setup()= function()  {
 	p.noCanvas();
 
 	// Process URL ?minute=
-	var params = p.getURLParams();
+	var params = getURLParams();
 	if (params.minute) {
 		var min = params.minute;
 		timeleft = min * 60;
@@ -43,21 +43,21 @@ p.setup()= function()  {
 
 	// Set initial value for DOM element
 	// timerText(convertSeconds(timeleft) + ' (paused)');
-	p.timerText(p.convertSeconds(timeleft));
+	p.timerText(convertSeconds(timeleft));
 
 	// Timer interval
 	p.timeIt() = function(){
 		timeleft--;
-		p.timerText(p.convertSeconds(timeleft));
+		p.timerText(convertSeconds(timeleft));
 
 		// Time's up
 		if (timeleft <= 0) {
 			// Ding spam
 			var dingcount = 0;
-			var dinginterval = p.setInterval(function() {
+			var dinginterval = setInterval(function() {
 				ding.play();
 				dingcount++;
-				if(dingcount == 10) p.clearInterval(dinginterval);
+				if(dingcount == 10) clearInterval(dinginterval);
 			}, 100);
 			//ding.play();
 			p.stopTimer();
@@ -80,22 +80,22 @@ p.setup()= function()  {
 			p.stopTimer();
 			timeleft = entered * 60;
 			//timerText(convertSeconds(timeleft) + ' (paused)');
-			p.timerText(p.convertSeconds(timeleft));
+			p.timerText(convertSeconds(timeleft));
 		}
 	};
 
 	// When pause btn is pressed
 	p.pause() = function() {
 		if(!interval) {
-			if(timeleft <= 0) return p.alert('No time set!');
+			if(timeleft <= 0) return alert('No time set!');
 
-			p.timerText(p.convertSeconds(timeleft));
-			interval = p.setInterval(timeIt, 1000);
+			p.timerText(convertSeconds(timeleft));
+			interval = setInterval(timeIt, 1000);
 		}
 		else
 		{
 			// timerText(convertSeconds(timeleft) + ' (paused)');
-			p.timerText(p.convertSeconds(timeleft));
+			p.timerText(convertSeconds(timeleft));
 			p.stopTimer();
 		}
 	};
