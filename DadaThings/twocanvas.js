@@ -59,7 +59,7 @@ function preload() {
 // Set value of the DOM element
 function timerText(text) {
 	var timer = p.select('#timer');
-	timer.html(text);
+	p.timer.html(text);
 }
 
 // Stop the timer
