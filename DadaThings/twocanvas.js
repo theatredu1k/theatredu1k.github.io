@@ -56,6 +56,17 @@ function convertSeconds(s) {
 function preload() {
 	ding = loadSound("ding.mp3");
 }
+// Set value of the DOM element
+function timerText(text) {
+	var timer = select('#timer');
+	timer.html(text);
+}
+
+// Stop the timer
+function stopTimer() {
+	clearInterval(interval);
+	interval = false;
+}
 
 
   p.setup = function() {
