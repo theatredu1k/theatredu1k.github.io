@@ -71,7 +71,64 @@ function preload() {
     // timerText(convertSeconds(timeleft) + ' (paused)');
     timerText(convertSeconds(timeleft));
 
-  };
+    // Timer interval
+    function timeIt() {
+      timeleft--;
+      timerText(convertSeconds(timeleft));
+
+      // Time's up
+      if (timeleft <= 0) {
+        // Ding spam
+        var dingcount = 0;
+        var dinginterval = setInterval(function() {
+          ding.play();
+          dingcount++;
+          if(dingcount == 10) clearInterval(dinginterval);
+        }, 100);
+        //ding.play();
+        stopTimer();
+      }
+    }
+
+    	// Set timer button
+    	timerbtn = createButton('set timer');
+    	timerbtn.mousePressed(setTimer);
+
+    	// Pause button
+    	pausebtn = createButton('pause/resume');
+    	pausebtn.mousePressed(pause);
+
+    	// Function when set timer btn is pressed
+    	function setTimer() {
+    		var entered = prompt('Enter the amount of minutes');
+
+    		if(!isNaN(entered) && entered >= 1) {
+    			stopTimer();
+    			timeleft = entered * 60;
+    			//timerText(convertSeconds(timeleft) + ' (paused)');
+    			timerText(convertSeconds(timeleft));
+    		}
+    	}
+
+    	// When pause btn is pressed
+    	function pause() {
+    		if(!interval) {
+    			if(timeleft <= 0) return alert('No time set!');
+
+    			timerText(convertSeconds(timeleft));
+    			interval = setInterval(timeIt, 1000);
+    		}
+    		else
+    		{
+    			// timerText(convertSeconds(timeleft) + ' (paused)');
+    			timerText(convertSeconds(timeleft));
+    			stopTimer();
+    		}
+    	}
+
+
+
+  };// setup
 
 
 };

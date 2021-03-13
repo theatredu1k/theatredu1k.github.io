@@ -94,4 +94,4 @@ function setup() {
 			stopTimer();
 		}
 	}
-}
+}//set up end
