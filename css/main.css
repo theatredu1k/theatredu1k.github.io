@@ -188,6 +188,7 @@ background: linear-gradient(to right,#ccffff,#003366,#FFFFCC);
   height: auto;
 }
 #rcorners3 {
+  /* images du site */
   border-radius:9px;
   /* background: url(YellowBioText.png); */
   background: linear-gradient(#FFBF00,#EFDECD) ;
@@ -216,6 +217,17 @@ background: linear-gradient(to right,#ccffff,#003366,#FFFFCC);
   /* background: url(YellowBioText.png); */
   /* background: linear-gradient(#155263,#EFDECD); */
   background: linear-gradient(#EFDECD,#5c426c);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 90px;
+  height: 190px;
+}
+#rcorners6 {
+  /* titre totem  */
+  border-radius:9px;
+  /* background: url(YellowBioText.png); */
+  background: linear-gradient(#FFBF00,#EFDECD) ;
   background-position: left top;
   background-repeat: repeat;
   padding: 20px;
