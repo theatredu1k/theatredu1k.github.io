@@ -12,12 +12,7 @@ var s = function( p ) { // p could be any variable name
   function preload() {
   	ding = p.loadSound("ding.mp3");
   };
-  // Convert seconds to min:sec
-  function convertSeconds(s) {
-  	let min = p.floor(this.s / 60);
-  	let sec = this.s % 60;
-  	return p.nf(min, 2) + ':' + p.nf(sec, 2);
-  };
+
 
   p.setup = function() {
     let timeleft = 300;
@@ -27,6 +22,13 @@ var s = function( p ) { // p could be any variable name
     p.background(160,255,220,90);
     p.createP('©Theatredu1k '+p.day()+p.month()+p.year());
 
+    // Convert seconds to min:sec
+    function convertSeconds(s) {
+    	let min = p.floor(this.s / 60);
+    	let sec = this.s % 60;
+    	return p.nf(min, 2) + ':' + p.nf(sec, 2);
+    };
+    
     document.getElementById("c3").innerHTML= this.result;
     //document.getElementById("c3").innerHTML= d;// this is working - and write here on c3 inner element the date
     };
