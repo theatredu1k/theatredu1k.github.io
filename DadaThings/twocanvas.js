@@ -33,7 +33,7 @@ var s = function( p ) { // p could be any variable name
   	interval = false;
   }
   p.setup = function() {
-
+    var timeleft = 300;
     var symbol = 'metaphor';
 
     p.createCanvas(400, 200);
@@ -50,13 +50,13 @@ var s = function( p ) { // p could be any variable name
     };
 
   p.draw = function() {
-    var timeleft = 300;
 
+    timeleft--;
     result = p.convertSeconds(timeleft);// this is working with p.convertseconds and p. before all the functions inside convertseconds
     document.getElementById("mytimer").innerHTML= result;
 
-    timeleft--;
-    console.log(result);
+
+
     p.fill(255);
     p.rect(x,y,50,50);
   };
