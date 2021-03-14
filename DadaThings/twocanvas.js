@@ -29,7 +29,7 @@ var s = function( p ) { // p could be any variable name
     };
     let result = convertSeconds(this.timeleft);
 
-    document.getElementById("c3").innerHTML= this.result;
+    document.getElementById("c3").innerHTML= result;
     //document.getElementById("c3").innerHTML= d;// this is working - and write here on c3 inner element the date
     };
 
