@@ -59,11 +59,11 @@ var s = function( p ) { // p could be any variable name
     result = p.convertSeconds(timeleft);// this is working with p.convertseconds and p. before all the functions inside convertseconds
     document.getElementById("mytimer").innerHTML= result;
 
-    var params = p.getURLParams();
-    if (params.minute) {
-      var min = params.minute;
-      timeleft = min * 60;
-    }
+    // var params = getURLParams();
+    // if (params.minute) {
+    //   var min = params.minute;
+    //   timeleft = min * 60;
+    // }
 
     p.fill(255);
     p.rect(x,y,50,50);
