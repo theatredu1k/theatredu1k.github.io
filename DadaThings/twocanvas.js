@@ -8,6 +8,7 @@ var s = function( p ) { // p could be any variable name
   var x = 100;
   var y = 100;
   var d = new Date();
+  var timeleft = 300;
 
   p.preload = function() {
   	ding = p.loadSound("ding.mp3");
@@ -50,7 +51,7 @@ var s = function( p ) { // p could be any variable name
     };
 
   p.draw = function() {
-    var timeleft = 300;
+
     timeleft--;
     result = p.convertSeconds(timeleft);// this is working with p.convertseconds and p. before all the functions inside convertseconds
     document.getElementById("mytimer").innerHTML= result;
