@@ -51,8 +51,17 @@ var s = function( p ) { // p could be any variable name
     };
 
   p.draw = function() {
+    var myVar;
 
-    setInterval(function(){timeleft--;}, 1000);
+    function myFunction() {
+      myVar = setInterval(alertFunc, 3000);
+    }
+
+    function alertFunc() {
+      timeleft--;
+    }
+    myfunction();
+    // setInterval(function(){timeleft--;}, 1000);
     document.getElementById("mytimer").innerHTML= timeleft;
 
     // result = p.convertSeconds(timeleft);// this is working with p.convertseconds and p. before all the functions inside convertseconds
