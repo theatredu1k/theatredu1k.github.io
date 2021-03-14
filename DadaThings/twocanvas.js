@@ -9,7 +9,7 @@ var s = function( p ) { // p could be any variable name
   var y = 100;
   var d = new Date();
 
-  function preload() {
+  p.preload = function() {
   	ding = p.loadSound("ding.mp3");
   };
 
@@ -20,19 +20,32 @@ var s = function( p ) { // p could be any variable name
     let sec = this.s % 60;
     return p.nf(min, 2) + ':' + p.nf(sec, 2);
   };
+  // Set value of the DOM element
+  p.timerText= function(text) {
+    this.text= text;
+  	// var timer = select('#timer');
+  	// timer.html(this.text);
+    document.getElementById("timer").innerHTML= this.text;
+  }
 
+  // Stop the timer
+  function stopTimer() {
+  	clearInterval(interval);
+  	interval = false;
+  }
   p.setup = function() {
     var timeleft = 300;
+    var symbol = 'symbolic';
 
     p.createCanvas(400, 200);
     p.background(160,255,220,90);
     p.createP('©Theatredu1k '+p.day()+p.month()+p.year());
 
-
-    result = p.convertSeconds(timeleft);
+    ecrire= p.timerText(symbol);
+    result = p.convertSeconds(timeleft);// this is working with p.convertseconds and p. before all the functions inside convertseconds
     // document.getElementById("mytimer").innerHTML= timeleft; //this is working
+    document.getElementById("timer").innerHTML= ecrire;
     document.getElementById("mytimer").innerHTML= result;
-
     document.getElementById("myDIV").innerHTML= d;// this is working - and write here on c3 inner element the date
     };
 
