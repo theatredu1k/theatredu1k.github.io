@@ -23,8 +23,8 @@ var s = function( p ) { // p could be any variable name
 var myp5 = new p5(s, 'c1');
 
 
-// Sketch Two
-var t = function( p ) {
+// Sketch One
+var t = function( p ) { // p could be any variable name
   var x = 100.0;// variables dans cette fonction
   var y = 100;
   var speed = 2.5;
