@@ -60,7 +60,7 @@ var s = function( p ) { // p could be any variable name
     p.alertFunc= function() {
       timeleft--;
     }
-    p.myfunction();
+    p.myFunction();
     // setInterval(function(){timeleft--;}, 1000);
     document.getElementById("mytimer").innerHTML= timeleft;
 
