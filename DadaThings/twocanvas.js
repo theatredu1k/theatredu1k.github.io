@@ -2,7 +2,7 @@
 
 // Sketch One
 var s = function( p ) { // p could be any variable name
-  let timeleft = 300;
+
   let ding;
   let interval = false;
   var x = 100;
@@ -20,6 +20,7 @@ var s = function( p ) { // p could be any variable name
   };
 
   p.setup = function() {
+    let timeleft = 300;
     let result = convertSeconds(timeleft);
 
     p.createCanvas(400, 200);
