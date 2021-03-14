@@ -54,7 +54,7 @@ var s = function( p ) { // p could be any variable name
     var myVar;
 
     p.myFunction = function() {
-      myVar = setInterval(alertFunc, 3000);
+      myVar = setInterval(p.alertFunc(), 3000);
     }
 
     p.alertFunc= function() {
