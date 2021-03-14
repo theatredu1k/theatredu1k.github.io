@@ -53,12 +53,13 @@ var s = function( p ) { // p could be any variable name
   p.draw = function() {
     var myVar;
 
-    p.myFunction = function() {
-      myVar = setInterval(p.alertFunc(), 3000);
-    }
+
 
     p.alertFunc= function() {
       timeleft--;
+    }
+    p.myFunction = function() {
+      myVar = setInterval(p.alertFunc(), 3000);
     }
     p.myFunction();
     // setInterval(function(){timeleft--;}, 1000);
