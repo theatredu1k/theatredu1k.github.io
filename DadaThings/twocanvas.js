@@ -5,8 +5,9 @@ var s = function( p ) { // p could be any variable name
   var x = 100;
   var y = 100;
   p.setup = function() {
-    p.background(160,255,220,90);
+
     p.createCanvas(400, 200);
+    p.background(160,255,220,90);
     p.createP('©Theatredu1k '+p.day()+p.month()+p.year());
 
     };
@@ -22,7 +23,7 @@ var myp5 = new p5(s, 'c1');
 
 // Sketch Two
 var t = function( p ) {
-  var x = 100.0;
+  var x = 100.0;// variables dans cette fonction
   var y = 100;
   var speed = 2.5;
   p.setup = function() {
@@ -30,7 +31,7 @@ var t = function( p ) {
   };
 
   p.draw = function() {
-    p.background(100);
+    p.background(100);// background de cette fonction
     p.fill(1);
     x += speed;
     if(x > p.width){
