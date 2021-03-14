@@ -44,7 +44,7 @@ var s = function( p ) { // p could be any variable name
     result = p.convertSeconds(timeleft);// this is working with p.convertseconds and p. before all the functions inside convertseconds
     // document.getElementById("mytimer").innerHTML= timeleft; //this is working
     document.getElementById("timer").innerHTML= symbol;// ok
-    document.getElementById("timer").innerHTML= ecrire; // non
+    // document.getElementById("timer").innerHTML= ecrire; // non
     document.getElementById("mytimer").innerHTML= result;
     document.getElementById("myDIV").innerHTML= d;// this is working - and write here on c3 inner element the date
     };
