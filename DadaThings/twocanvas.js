@@ -37,12 +37,7 @@ var s = function( p ) { // p could be any variable name
 
     var symbol = 'metaphor';
 
-    // Process URL ?minute=
-  	var params = getURLParams();
-  	if (params.minute) {
-  		var min = params.minute;
-  		timeleft = min * 60;
-  	}
+
 
     p.createCanvas(400, 200);
     p.background(160,255,220,90);
@@ -59,7 +54,12 @@ var s = function( p ) { // p could be any variable name
 
   p.draw = function() {
 
-
+    // Process URL ?minute=
+    var params = getURLParams();
+    if (params.minute) {
+      var min = params.minute;
+      timeleft = min * 60;
+    }
     result = p.convertSeconds(timeleft);// this is working with p.convertseconds and p. before all the functions inside convertseconds
     document.getElementById("mytimer").innerHTML= result;
 
