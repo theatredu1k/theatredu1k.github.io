@@ -55,15 +55,15 @@ var s = function( p ) { // p could be any variable name
   p.draw = function() {
     timeleft--;
     // Process URL ?minute=
+
+    result = p.convertSeconds(timeleft);// this is working with p.convertseconds and p. before all the functions inside convertseconds
+    document.getElementById("mytimer").innerHTML= result;
+
     var params = getURLParams();
     if (params.minute) {
       var min = params.minute;
       timeleft = min * 60;
     }
-    result = p.convertSeconds(timeleft);// this is working with p.convertseconds and p. before all the functions inside convertseconds
-    document.getElementById("mytimer").innerHTML= result;
-
-
 
     p.fill(255);
     p.rect(x,y,50,50);
