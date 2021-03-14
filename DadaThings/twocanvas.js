@@ -53,14 +53,14 @@ var s = function( p ) { // p could be any variable name
   p.draw = function() {
     var myVar;
 
-    function myFunction() {
+    p.myFunction = function() {
       myVar = setInterval(alertFunc, 3000);
     }
 
-    function alertFunc() {
+    p.alertFunc= function() {
       timeleft--;
     }
-    myfunction();
+    p.myfunction();
     // setInterval(function(){timeleft--;}, 1000);
     document.getElementById("mytimer").innerHTML= timeleft;
 
