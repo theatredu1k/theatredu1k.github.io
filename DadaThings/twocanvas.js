@@ -13,6 +13,12 @@ var s = function( p ) { // p could be any variable name
   	ding = p.loadSound("ding.mp3");
   };
 
+  // Convert seconds to min:sec
+  function convertSeconds(s) {
+    let min = p.floor(this.s / 60);
+    let sec = this.s % 60;
+    return p.nf(min, 2) + ':' + p.nf(sec, 2);
+  };
 
   p.setup = function() {
     var timeleft = 300;
@@ -21,16 +27,10 @@ var s = function( p ) { // p could be any variable name
     p.background(160,255,220,90);
     p.createP('©Theatredu1k '+p.day()+p.month()+p.year());
 
-    // Convert seconds to min:sec
-    function convertSeconds(s) {
-    	let min = p.floor(this.s / 60);
-    	let sec = this.s % 60;
-    	return p.nf(min, 2) + ':' + p.nf(sec, 2);
-    };
 
-    this.result = convertSeconds(timeleft);
+    result = p.convertSeconds(timeleft);
     // document.getElementById("mytimer").innerHTML= timeleft; //this is working
-    document.getElementById("mytimer").innerHTML= this.result;
+    document.getElementById("mytimer").innerHTML= result;
 
     document.getElementById("myDIV").innerHTML= d;// this is working - and write here on c3 inner element the date
     };
