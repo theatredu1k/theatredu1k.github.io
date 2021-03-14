@@ -16,7 +16,7 @@ var s = function( p ) { // p could be any variable name
   // Convert seconds to min:sec
   p.convertSeconds = function(s) {
     this.s = s;
-    let min = floor(this.s / 60);
+    let min = p.floor(this.s / 60);
     let sec = this.s % 60;
     return p.nf(min, 2) + ':' + p.nf(sec, 2);
   };
