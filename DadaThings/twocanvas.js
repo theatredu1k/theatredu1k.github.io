@@ -23,9 +23,8 @@ var s = function( p ) { // p could be any variable name
   // Set value of the DOM element
   p.timerText= function(text) {
     this.text= text;
-  	// var timer = select('#timer');
-  	// timer.html(this.text);
-    document.getElementById("timer").innerHTML= this.text;
+  	var timer = select('#timer');
+  	timer.html(this.text);
   }
 
   // Stop the timer
@@ -64,7 +63,7 @@ var myp5 = new p5(s, 'c1');// first canvas c1 from the bottom
 
 
 
-// Sketch One
+// Sketch Two
 var t = function( p ) { // p could be any variable name
   var x = 100.0;// variables dans cette fonction
   var y = 100;
