@@ -29,7 +29,9 @@ var s = function( p ) { // p could be any variable name
     };
 
     var result = convertSeconds(timeleft);
-    document.getElementById("myP").innerHTML= timeleft;
+    // document.getElementById("mytimer").innerHTML= timeleft;
+    document.getElementById("mytimer").innerHTML= result;
+
     document.getElementById("myDIV").innerHTML= d;// this is working - and write here on c3 inner element the date
     };
 
@@ -39,7 +41,13 @@ var s = function( p ) { // p could be any variable name
     p.rect(x,y,50,50);
   };
 };// end var s function(p)
-var myp5 = new p5(s, 'c1');
+var myp5 = new p5(s, 'c1');// first canvas c1 from the bottom
+
+
+
+
+
+
 
 
 // Sketch One
