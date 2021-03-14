@@ -27,7 +27,7 @@ var s = function( p ) { // p could be any variable name
     p.createP('©Theatredu1k '+p.day()+p.month()+p.year());
 
     document.getElementById("c3").innerHTML= result;
-    document.getElementById("c3").innerHTML= d;// this is working - and write here on c3 inner element the date
+    //document.getElementById("c3").innerHTML= d;// this is working - and write here on c3 inner element the date
     };
 
   p.draw = function() {
