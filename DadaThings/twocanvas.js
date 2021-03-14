@@ -44,7 +44,9 @@ var myp5 = new p5(t, 'c2');
 
 // Sketch Three
 // ----------------------------------------------------
-let u = function( p ) {var timeleft = 300;
+
+var u = function( p ) {
+let timeleft = 300;
 let ding;
 let interval = false;
 
