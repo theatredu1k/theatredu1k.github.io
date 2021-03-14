@@ -2,16 +2,31 @@
 
 // Sketch One
 var s = function( p ) { // p could be any variable name
+  let timeleft = 300;
+  let ding;
+  let interval = false;
   var x = 100;
   var y = 100;
   var d = new Date();
+
+  function preload() {
+  	ding = p.loadSound("ding.mp3");
+  };
+  // Convert seconds to min:sec
+  function convertSeconds(s) {
+  	let min = floor(this.s / 60);
+  	let sec = this.s % 60;
+  	return p.nf(min, 2) + ':' + p.nf(sec, 2);
+  };
+
+
   p.setup = function() {
 
     p.createCanvas(400, 200);
     p.background(160,255,220,90);
     p.createP('©Theatredu1k '+p.day()+p.month()+p.year());
 
-    document.getElementById("c3").innerHTML= d;
+    document.getElementById("c3").innerHTML= d;// write here on c3 inner element the date
     };
 
   p.draw = function() {
