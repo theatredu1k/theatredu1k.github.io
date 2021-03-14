@@ -24,7 +24,8 @@ var myp5 = new p5(s, 'c1');
 
 
 // Sketch Two
-c   var x = 100.0;// variables dans cette fonction
+var t = function( p ) {
+  var x = 100.0;// variables dans cette fonction
   var y = 100;
   var speed = 2.5;
   p.setup = function() {
