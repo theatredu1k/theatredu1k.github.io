@@ -15,7 +15,7 @@ var s = function( p ) { // p could be any variable name
 
 
   p.setup = function() {
-    let timeleft = 300;
+    this.timeleft = 300;
 
     p.createCanvas(400, 200);
     p.background(160,255,220,90);
