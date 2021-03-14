@@ -28,9 +28,9 @@ var s = function( p ) { // p could be any variable name
     	return p.nf(min, 2) + ':' + p.nf(sec, 2);
     };
 
-    var result = convertSeconds(timeleft);
-    // document.getElementById("mytimer").innerHTML= timeleft;
-    document.getElementById("mytimer").innerHTML= result;
+    this.result = convertSeconds(timeleft);
+    // document.getElementById("mytimer").innerHTML= timeleft; //this is working
+    document.getElementById("mytimer").innerHTML= this.result;
 
     document.getElementById("myDIV").innerHTML= d;// this is working - and write here on c3 inner element the date
     };
