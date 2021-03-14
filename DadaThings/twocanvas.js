@@ -6,7 +6,7 @@ var s = function( p ) { // p could be any variable name
   var y = 100;
   p.setup = function() {
     p.background(160,255,220,90);
-    p.createCanvas(400, 200
+    p.createCanvas(400, 200);
     p.createP('©Theatredu1k '+p.day()+p.month()+p.year());
 
     };
@@ -46,106 +46,106 @@ var myp5 = new p5(t, 'c2');
 // Sketch Three
 // ----------------------------------------------------
 
-var u = function( p ) {
-let timeleft = 300;
-let ding;
-let interval = false;
-
-// Convert seconds to min:sec
-function convertSeconds(s) {
-	min = p.floor(this.s / 60);
-	sec = this.s % 60;
-	return p.nf(min, 2) + ':' + p.nf(sec, 2);
-};
-
-function preload() {
-	ding = p.loadSound("ding.mp3");
-};
-// Set value of the DOM element
-function timerText(text) {
-	timer = p.select('#timer');
-	timer.html(this.text);
-};
-
-// Stop the timer
-function stopTimer() {
-	p.clearInterval(interval);
-	interval = false;
-};
-
-
-  p.setup = function() {
-    p.createCanvas(400, 200);
-    // Process URL ?minute=
-    var params = p.getURLParams();
-    if (params.minute) {
-      var min = params.minute;
-      timeleft = min * 60;
-    }
-
-    // Set initial value for DOM element
-    // timerText(convertSeconds(timeleft) + ' (paused)');
-    timerText(convertSeconds(timeleft));
-
-    // Timer interval
-    function timeIt() {
-      timeleft--;
-      timerText(convertSeconds(timeleft));
-
-      // Time's up
-      if (timeleft <= 0) {
-        // Ding spam
-        var dingcount = 0;
-        var dinginterval = p.setInterval(function() {
-          ding.play();
-          dingcount++;
-          if(dingcount == 10) p.clearInterval(dinginterval);
-        }, 100);
-        //ding.play();
-        stopTimer();
-      }
-    }
-
-    	// Set timer button
-    	timerbtn = p.createButton('set timer');
-    	timerbtn.mousePressed(setTimer);
-
-    	// Pause button
-    	pausebtn = p.createButton('pause/resume');
-    	pausebtn.mousePressed(pause);
-
-    	// Function when set timer btn is pressed
-    	function setTimer() {
-    		var entered = p.prompt('Enter the amount of minutes');
-
-    		if(!isNaN(entered) && entered >= 1) {
-    			stopTimer();
-    			timeleft = entered * 60;
-    			//timerText(convertSeconds(timeleft) + ' (paused)');
-    			timerText(convertSeconds(timeleft));
-    		}
-    	}
-
-    	// When pause btn is pressed
-    	function pause() {
-    		if(!interval) {
-    			if(timeleft <= 0) return alert('No time set!');
-
-    			timerText(convertSeconds(timeleft));
-    			interval = p.setInterval(timeIt, 1000);
-    		}
-    		else
-    		{
-    			// timerText(convertSeconds(timeleft) + ' (paused)');
-    			timerText(convertSeconds(timeleft));
-    			stopTimer();
-    		}
-    	}
-
-
-
-  };// setup
-
-
-};
-var myp5 = new p5(u, 'c3');
+// var u = function( p ) {
+// let timeleft = 300;
+// let ding;
+// let interval = false;
+//
+// // Convert seconds to min:sec
+// function convertSeconds(s) {
+// 	min = p.floor(this.s / 60);
+// 	sec = this.s % 60;
+// 	return p.nf(min, 2) + ':' + p.nf(sec, 2);
+// };
+//
+// function preload() {
+// 	ding = p.loadSound("ding.mp3");
+// };
+// // Set value of the DOM element
+// function timerText(text) {
+// 	timer = p.select('#timer');
+// 	timer.html(this.text);
+// };
+//
+// // Stop the timer
+// function stopTimer() {
+// 	p.clearInterval(interval);
+// 	interval = false;
+// };
+//
+//
+//   p.setup = function() {
+//     p.createCanvas(400, 200);
+//     // Process URL ?minute=
+//     var params = p.getURLParams();
+//     if (params.minute) {
+//       var min = params.minute;
+//       timeleft = min * 60;
+//     }
+//
+//     // Set initial value for DOM element
+//     // timerText(convertSeconds(timeleft) + ' (paused)');
+//     timerText(convertSeconds(timeleft));
+//
+//     // Timer interval
+//     function timeIt() {
+//       timeleft--;
+//       timerText(convertSeconds(timeleft));
+//
+//       // Time's up
+//       if (timeleft <= 0) {
+//         // Ding spam
+//         var dingcount = 0;
+//         var dinginterval = p.setInterval(function() {
+//           ding.play();
+//           dingcount++;
+//           if(dingcount == 10) p.clearInterval(dinginterval);
+//         }, 100);
+//         //ding.play();
+//         stopTimer();
+//       }
+//     }
+//
+//     	// Set timer button
+//     	timerbtn = p.createButton('set timer');
+//     	timerbtn.mousePressed(setTimer);
+//
+//     	// Pause button
+//     	pausebtn = p.createButton('pause/resume');
+//     	pausebtn.mousePressed(pause);
+//
+//     	// Function when set timer btn is pressed
+//     	function setTimer() {
+//     		var entered = p.prompt('Enter the amount of minutes');
+//
+//     		if(!isNaN(entered) && entered >= 1) {
+//     			stopTimer();
+//     			timeleft = entered * 60;
+//     			//timerText(convertSeconds(timeleft) + ' (paused)');
+//     			timerText(convertSeconds(timeleft));
+//     		}
+//     	}
+//
+//     	// When pause btn is pressed
+//     	function pause() {
+//     		if(!interval) {
+//     			if(timeleft <= 0) return alert('No time set!');
+//
+//     			timerText(convertSeconds(timeleft));
+//     			interval = p.setInterval(timeIt, 1000);
+//     		}
+//     		else
+//     		{
+//     			// timerText(convertSeconds(timeleft) + ' (paused)');
+//     			timerText(convertSeconds(timeleft));
+//     			stopTimer();
+//     		}
+//     	}
+//
+//
+//
+//   };// setup
+//
+//
+// };
+// var myp5 = new p5(u, 'c3');
