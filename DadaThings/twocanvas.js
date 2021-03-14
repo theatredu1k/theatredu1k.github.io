@@ -55,22 +55,22 @@ function convertSeconds(s) {
 	min = p.floor(this.s / 60);
 	sec = this.s % 60;
 	return p.nf(min, 2) + ':' + p.nf(sec, 2);
-}
+};
 
 function preload() {
 	ding = p.loadSound("ding.mp3");
-}
+};
 // Set value of the DOM element
 function timerText(text) {
 	timer = p.select('#timer');
 	timer.html(this.text);
-}
+};
 
 // Stop the timer
 function stopTimer() {
 	p.clearInterval(interval);
 	interval = false;
-}
+};
 
 
   p.setup = function() {
