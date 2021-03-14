@@ -51,7 +51,7 @@ var s = function( p ) { // p could be any variable name
 
   p.draw = function() {
     var timeleft = 300;
-    timeleft = timeleft--;
+    timeleft = timeleft -1;
     result = p.convertSeconds(timeleft);// this is working with p.convertseconds and p. before all the functions inside convertseconds
     document.getElementById("mytimer").innerHTML= result;
 
