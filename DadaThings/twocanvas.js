@@ -37,6 +37,13 @@ var s = function( p ) { // p could be any variable name
 
     var symbol = 'metaphor';
 
+    // Process URL ?minute=
+  	var params = getURLParams();
+  	if (params.minute) {
+  		var min = params.minute;
+  		timeleft = min * 60;
+  	}
+
     p.createCanvas(400, 200);
     p.background(160,255,220,90);
     p.createP('©Theatredu1k '+p.day()+p.month()+p.year());
