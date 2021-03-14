@@ -37,8 +37,6 @@ var s = function( p ) { // p could be any variable name
 
     var symbol = 'metaphor';
 
-
-
     p.createCanvas(400, 200);
     p.background(160,255,220,90);
     p.createP('©Theatredu1k '+p.day()+p.month()+p.year());
@@ -58,12 +56,6 @@ var s = function( p ) { // p could be any variable name
 
     result = p.convertSeconds(timeleft);// this is working with p.convertseconds and p. before all the functions inside convertseconds
     document.getElementById("mytimer").innerHTML= result;
-
-    // var params = getURLParams();
-    // if (params.minute) {
-    //   var min = params.minute;
-    //   timeleft = min * 60;
-    // }
 
     p.fill(255);
     p.rect(x,y,50,50);
