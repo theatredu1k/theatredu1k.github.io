@@ -56,7 +56,7 @@ var s = function( p ) { // p could be any variable name
     document.getElementById("mytimer").innerHTML= result;
 
     timeleft--;
-    console.log(timeleft);
+    console.log(result);
     p.fill(255);
     p.rect(x,y,50,50);
   };
