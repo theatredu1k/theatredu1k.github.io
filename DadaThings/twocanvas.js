@@ -52,11 +52,11 @@ var s = function( p ) { // p could be any variable name
 
   p.draw = function() {
 
-    timeleft--;
+
     result = p.convertSeconds(timeleft);// this is working with p.convertseconds and p. before all the functions inside convertseconds
     document.getElementById("mytimer").innerHTML= result;
 
-
+    timeleft--;
 
     p.fill(255);
     p.rect(x,y,50,50);
