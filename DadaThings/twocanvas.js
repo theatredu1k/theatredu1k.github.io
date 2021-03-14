@@ -14,7 +14,7 @@ var s = function( p ) { // p could be any variable name
   };
   // Convert seconds to min:sec
   function convertSeconds(s) {
-  	let min = floor(this.s / 60);
+  	let min = p.floor(this.s / 60);
   	let sec = this.s % 60;
   	return p.nf(min, 2) + ':' + p.nf(sec, 2);
   };
@@ -26,7 +26,7 @@ var s = function( p ) { // p could be any variable name
     p.background(160,255,220,90);
     p.createP('©Theatredu1k '+p.day()+p.month()+p.year());
 
-    document.getElementById("c3").innerHTML= result;// this is working - and write here on c3 inner element the date
+    // document.getElementById("c3").innerHTML= result;// this is working - and write here on c3 inner element the date
     document.getElementById("c3").innerHTML= d;// this is working - and write here on c3 inner element the date
     };
 
@@ -35,7 +35,7 @@ var s = function( p ) { // p could be any variable name
     p.fill(255);
     p.rect(x,y,50,50);
   };
-};
+};// end var s function(p)
 var myp5 = new p5(s, 'c1');
 
 
