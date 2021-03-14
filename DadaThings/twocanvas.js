@@ -19,16 +19,17 @@ var s = function( p ) { // p could be any variable name
   	return p.nf(min, 2) + ':' + p.nf(sec, 2);
   };
 
-
   p.setup = function() {
+    let result = convertSeconds(timeleft);
 
     p.createCanvas(400, 200);
     p.background(160,255,220,90);
     p.createP('©Theatredu1k '+p.day()+p.month()+p.year());
 
-    document.getElementById("c3").innerHTML= d;// write here on c3 inner element the date
+    document.getElementById("c3").innerHTML= d;// this is working - and write here on c3 inner element the date
     };
-
+    document.getElementById("c3").innerHTML= result;// this is working - and write here on c3 inner element the date
+    };
   p.draw = function() {
 
     p.fill(255);
