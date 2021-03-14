@@ -23,7 +23,7 @@ var s = function( p ) { // p could be any variable name
   // Set value of the DOM element
   p.timerText= function(text) {
     this.text= text;
-  	var timer = p.select('#timer');
+  	let timer = p.select("timer");
   	timer.html(this.text);
   }
 
