@@ -11,7 +11,7 @@ var s = function( p ) { // p could be any variable name
     p.background(160,255,220,90);
     p.createP('©Theatredu1k '+p.day()+p.month()+p.year());
 
-    p.document.getElementById("c3").innerHTML= d;
+    document.getElementById("c3").innerHTML= d;
     };
 
   p.draw = function() {
