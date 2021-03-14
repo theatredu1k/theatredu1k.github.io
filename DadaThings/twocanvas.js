@@ -33,7 +33,7 @@ var s = function( p ) { // p could be any variable name
   	interval = false;
   }
   p.setup = function() {
-    var timeleft = 300;
+
     var symbol = 'metaphor';
 
     p.createCanvas(400, 200);
@@ -41,16 +41,21 @@ var s = function( p ) { // p could be any variable name
     p.createP('©Theatredu1k '+p.day()+p.month()+p.year());
 
     ecrire= p.timerText(symbol);
-    result = p.convertSeconds(timeleft);// this is working with p.convertseconds and p. before all the functions inside convertseconds
+    // result = p.convertSeconds(timeleft);// this is working with p.convertseconds and p. before all the functions inside convertseconds
+
     // document.getElementById("mytimer").innerHTML= timeleft; //this is working
     document.getElementById("timer").innerHTML= symbol;// ok
     // document.getElementById("timer").innerHTML= ecrire; // non
-    document.getElementById("mytimer").innerHTML= result;
     document.getElementById("myDIV").innerHTML= d;// this is working - and write here on c3 inner element the date
     };
 
   p.draw = function() {
+    var timeleft = 300;
     timeleft--;
+    result = p.convertSeconds(timeleft);// this is working with p.convertseconds and p. before all the functions inside convertseconds
+    document.getElementById("mytimer").innerHTML= result;
+
+
     p.fill(255);
     p.rect(x,y,50,50);
   };
