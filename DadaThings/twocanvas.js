@@ -15,7 +15,7 @@ var s = function( p ) { // p could be any variable name
 
 
   p.setup = function() {
-    this.timeleft = 300;
+    var timeleft = 300;
 
     p.createCanvas(400, 200);
     p.background(160,255,220,90);
@@ -27,8 +27,9 @@ var s = function( p ) { // p could be any variable name
     	let sec = this.s % 60;
     	return p.nf(min, 2) + ':' + p.nf(sec, 2);
     };
-    this.result = convertSeconds(this.timeleft);
-    document.getElementById("c3").innerHTML= this.timeleft;
+
+    var result = convertSeconds(timeleft);
+    document.getElementById("c3").innerHTML= timeleft;
     //document.getElementById("c3").innerHTML= d;// this is working - and write here on c3 inner element the date
     };
 
