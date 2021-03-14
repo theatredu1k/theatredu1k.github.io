@@ -12,9 +12,9 @@ var s = function( p ) { // p could be any variable name
     p.background(0,255,0);
     p.fill(255);
     p.rect(x,y,50,50);
-    //p.createP('©Theatredu1k '+p.day()+p.month()+p.year());
+    p.createP('©Theatredu1k '+p.day()+p.month()+p.year());
 
-  // };
+  };
 };
 var myp5 = new p5(s, 'c1');
 
