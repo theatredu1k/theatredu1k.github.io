@@ -30,7 +30,7 @@ var s = function( p ) { // p could be any variable name
 
     var result = convertSeconds(timeleft);
     document.getElementById("c3").innerHTML= timeleft;
-    //document.getElementById("c3").innerHTML= d;// this is working - and write here on c3 inner element the date
+    document.getElementById("c3").innerHTML= d;// this is working - and write here on c3 inner element the date
     };
 
   p.draw = function() {
