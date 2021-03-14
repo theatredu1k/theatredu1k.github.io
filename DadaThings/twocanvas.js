@@ -6,13 +6,14 @@ var s = function( p ) { // p could be any variable name
   var y = 100;
   p.setup = function() {
     p.createCanvas(400, 200);
-    p.createP('©Theatredu1k '+p.day()+p.month()+p.year());
-  };
+    };
 
-  // p.draw = function() {
-  //   p.background(0);
-  //   p.fill(255);
-  //   p.rect(x,y,50,50);
+  p.draw = function() {
+    p.background(0,255,0);
+    p.fill(255);
+    p.rect(x,y,50,50);
+    //p.createP('©Theatredu1k '+p.day()+p.month()+p.year());
+
   // };
 };
 var myp5 = new p5(s, 'c1');
@@ -43,14 +44,14 @@ var myp5 = new p5(t, 'c2');
 
 // Sketch Three
 // ----------------------------------------------------
-var u = function( p ) {var timeleft = 300;
-var ding;
-var interval = false;
+let u = function( p ) {var timeleft = 300;
+let ding;
+let interval = false;
 
 // Convert seconds to min:sec
 function convertSeconds(s) {
-	var min = p.floor(s / 60);
-	var sec = s % 60;
+	min = p.floor(this.s / 60);
+	sec = this.s % 60;
 	return p.nf(min, 2) + ':' + p.nf(sec, 2);
 }
 
@@ -59,8 +60,8 @@ function preload() {
 }
 // Set value of the DOM element
 function timerText(text) {
-	var timer = p.select('#timer');
-	p.timer.html(text);
+	timer = p.select('#timer');
+	timer.html(this.text);
 }
 
 // Stop the timer
