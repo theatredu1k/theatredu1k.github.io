@@ -52,13 +52,13 @@ var s = function( p ) { // p could be any variable name
 
   p.draw = function() {
 
-    setInterval(timeleft--, 1000);
-
-    // setInterval(function(){timeleft--;}, 1000);
-    document.getElementById("mytimer").innerHTML= timeleft;
-
-    // result = p.convertSeconds(timeleft);// this is working with p.convertseconds and p. before all the functions inside convertseconds
-    // document.getElementById("mytimer").innerHTML= result;
+    // setInterval(timeleft--, 1000);
+    //
+    // // setInterval(function(){timeleft--;}, 1000);
+    // document.getElementById("mytimer").innerHTML= timeleft;
+    //
+    // // result = p.convertSeconds(timeleft);// this is working with p.convertseconds and p. before all the functions inside convertseconds
+    // // document.getElementById("mytimer").innerHTML= result;
 
     p.fill(255);
     p.rect(x,y,50,50);
