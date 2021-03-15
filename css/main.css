@@ -373,7 +373,7 @@ background: linear-gradient(to right,#ccffff,#003366,#FFFFCC);
 div.content {
   position:relative;
   margin-left: 140px;
-  padding: 1px 16px
+  padding: 1px 16px;
   font-family: 'Karla';
   font-size: 16px;
   /* height: auto; */
