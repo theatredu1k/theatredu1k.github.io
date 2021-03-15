@@ -95,3 +95,33 @@ function setup() {
 		}
 	}
 }//set up end
+
+
+// Sketch One
+var s = function( p ) { // p could be any variable name
+
+
+  let interval = false;
+  var x = 100;
+  var y = 100;
+  var d = new Date();
+
+
+  p.setup = function() {
+
+    var symbol = 'metaphor';
+
+    p.createCanvas(400, 200);
+    p.background(160,255,220,90);
+    p.createP('©Theatredu1k '+p.day()+p.month()+p.year());
+
+    document.getElementById("myDIV").innerHTML= symbol;// this is working - and write here on myDIV inner element the date
+    };
+
+  p.draw = function() {
+
+    p.fill(255);
+    p.rect(x,y,50,50);
+  };
+};// end var s function(p)
+var myp5 = new p5(s, 'c1');// first canvas c1 from the bottom
