@@ -1,0 +1,37 @@
+{
+  "description": "A list of my everyday intake of food by colour extracted for dye ",
+  "tea" :[
+  {"name": "genmaicha",
+  "r":163,
+  "g":136,
+  "b":13,
+  "jour": "2021-03-22T13:28"},
+
+  {"name": "hibiscus",
+  "r":102,
+  "g":0,
+  "b":51,
+  "jour": "2021-03-22T9:28"},
+  {"name": "hibiscus",
+  "r":102,
+  "g":0,
+  "b":51,
+  "jour": "2021-03-23T9:28"},
+
+  {"name": "green ginger tea",
+  "r":177,
+  "g":236,
+  "b":38,
+  "jour": "2021-03-24T9:28"}
+
+
+],
+"vegetable": [
+  {"name": "avocado",
+  "r": 153,
+  "g":0,
+  "b":51,
+  "jour": "2021-03-22T13:28"}
+
+]
+}
