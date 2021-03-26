@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "water solar system planet- color of the oceans- smell"
+title: "water solar system planet- color and smell of the oceans"
 date: 2021-03-26
 ---
 <li> <a href="https://www.nasa.gov/specials/ocean-worlds/">Waters on the solar system planet </a>.
