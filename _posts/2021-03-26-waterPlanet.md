@@ -11,12 +11,4 @@ Imagine different planets hiding their water from earth, hiding from us because 
 
 <li><em>Venus</em> may have been our solar system’s first ocean world.<br>
 Billions of years ago, <em>Mars</em> lost its protective global magnetic field and has lost approximately 87 percent of the water it had billions of years ago. Most of the remaining water on Mars is frozen in the ice caps or trapped beneath the soil<br>
-<li><em>Moons of Jupiter </em>
-Scientists strongly suspect that a subsurface salty ocean lies beneath <em>Europa</em>'s icy crust.<br>
-a large underground saltwater ocean is present on <em>Ganymede</em><br>
-<em>Callisto</em>’s cratered surface lies at the top of an ice layer<br>
-
-<li> <em>Moons of Saturn </em>
-<em>Enceladus</em> moon of Saturn has a regional reservoir about 6 miles (10 km) deep lies under a shell of ice 20 to 25 miles( 30 to 40 km) <br>
-<em>Titan</em> is believed to have a salty subsurface ocean<br>
-<em>Mimas</em> is hiding a liquid water ocean, it lies 15 to 20 miles (25 to 30 km) beneath the moon’s impact-battered surface.<br>
+<li><em>Moons of Jupiter </em> Europa , Ganymede and Callisto have salty waters underground their surface protected by icy layers and so do the <em>Moons of Saturn </em>
