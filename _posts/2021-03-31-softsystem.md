@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "what textile soft systems are for"
+title: "ambiguity of textile soft systems"
 date: 2021-03-31
 ---
-<li>using textile system to tell something ( storytellling) about what is happening in the system, what could be the relationship between the actors of the system, not only how could they evolve but also how the relationships could evolve. the ongoing ballet and change of agency and control.
+<li>testing with puppetry , a list of postdigital textiles to reveal their ambiguity, in response to Timothy Morton 's call to embrace the irony, ambiguity and the beauty of the world to be able to go forward and evolve
