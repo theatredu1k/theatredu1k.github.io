@@ -158,6 +158,7 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+    font-variant: small-caps;
     font-family: 'Karla';
 }
 .myDiv {
