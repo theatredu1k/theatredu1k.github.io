@@ -73,7 +73,7 @@ h1 {
     font-size: 36px;
     font-family: 'Lato', 'Helvetica','Sans-Serif';
     font-variant: small-caps;
-    /* font-weight: bold; */
+    font-weight: bold;
     color: tomato;
 }
 
