@@ -13,5 +13,5 @@ Thomas Mann, <a href="https://www.enotes.com/topics/transposed-heads/characters"
 <li>
 Jurodowski, <a href= "https://www.youtube.com/watch?v=vSYWv9W_-AY"><u> La Cravate</u> </a>swapping heads voluntary, happy ending, finally the head and the body are loved
 <li>
-Shakespeare, <a href="https://londonkoreanlinks.net/2011/08/15/festival-visit-mokhwa-repertory-company-the-tempest/"> <u>the Tempest</u>  </a> through the eyes of a Korean theatre company: Caliban is a double-headed monster, with the two heads long to be set free from each other. spirits whose masks made them invisible.
+Shakespeare, <a href="https://londonkoreanlinks.net/2011/08/15/festival-visit-mokhwa-repertory-company-the-tempest/"> <u>the Tempest</u>  </a> through the eyes of a Korean theatre company: Caliban is a double-headed monster, with two heads long to be set free from each other. spirits whose masks made them invisible.
  Ferdinand is a bare-torsoed acrobat, Miranda feisty and spiky-haired. Ariel, often depicted as blandly aloof, is portrayed here as Prospero’s mischievous co-conspirator
