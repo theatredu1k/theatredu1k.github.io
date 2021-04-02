@@ -158,7 +158,8 @@ ul.posts {
 }
 
 ul.posts li {
-    list-style: none;
+    /* list-style: none; */
+    list-style-type: circle;
     font-family: 'Karla';
 }
 .myDiv {
