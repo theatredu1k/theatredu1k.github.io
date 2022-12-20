@@ -1,31 +1,79 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Theatredu1k Devising with Code</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Sabrina, an artist researcher and puppeteer working from the material expressivity to create and perform shadow theatre and stop motion animations</h1>
-				<p>This is a devising impro with code to support the generation of scripts for performing my puppets<em> A Crafting magic and wonder with textiles </em> Trust the materials. <a href="/about"> Read more about the material inside the puppet in my phD...</a></p>
-    		</div><!-- /.blurb --
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:sreco003@gmail.com">email</a></li>
-        		<li><a href="https://github.com/theatredu1k">github.com/theatredu1k</a></li>
-			</ul>
-		</footer>
-	</body>
-</html>
+<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<!-- <style>
+			@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+			</style> -->
 
+		</head>
+		<body id="grad3">
+			<!-- <nav> -->
+			<div class="sidebar">
+
+	 		  <a href="/">Home</a>
+		    <a href="/about">About</a>
+	      <a href="/cv">CV</a>
+	      <!-- <a href="/blog">Diary</a> -->
+				<a href="/computerVision">DadaVision</a></li>
+				<a href="/DadaSonic">DadaSonic</a>
+				<a href="/DadaBlabla">DadaBlabla</a>
+				<!-- <a href="/DadaData">DadaData</a> -->
+				<button class="dropdown-btn">DadaData
+				 <i class="fa fa-caret-down"></i>
+			  </button>
+				<div class="dropdown-container">
+					<a href="/DadaData/TextAnalysis"> Text Data</a>
+					<a href="/DadaData/TrendAnalysis"> Trend Data</a>
+					<a href="/DadaData/ImageAnalysis"> Image Data</a>
+					<a href="/DadaData/NatureAnalysis"> Nature data </a>
+
+				</div>
+
+				<a href="/DadaThings">DadaThings</a>
+				<a href="/DadaGallery">DadaGallery</a>
+
+
+
+
+
+			</div>
+			<!-- </nav> -->
+			<div class="content">
+
+			{{ content }}
+
+			</div><!-- /.container -->
+			<div class="footer">
+
+	        	<a style="color:tomato" href="mailto:sabrina@theatredu1k.com"> email  </a><br>
+						© Sabrina Recoules Quang  <script type="text/javascript">document.write( new Date().getFullYear() )</script>
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br /> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+</div>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+
+
+		</body>
+	</html>
