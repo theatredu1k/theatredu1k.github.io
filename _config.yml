@@ -1,2 +1,3 @@
 	name: theatredu1k, devising
 	markdown: kramdown
+	permalink: /blog/:year/:month/:day/:title
