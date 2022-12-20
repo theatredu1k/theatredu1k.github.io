@@ -1,0 +1,486 @@
+
+
+body {
+  /* margin 72 width 72% is working with sidebar 150 div content position relative */
+    margin: 120px auto;
+    width: 72%;
+    color: black;
+    /* background-color:  #F7EEE2; */
+    background-color:  #ebebea;
+    font-family: 'Karla';
+
+}
+/* nav ul, footer ul {
+    font-family: 'Arial', 'Helvetica','Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+} */
+footer ul {
+    font-family: 'Arial', 'Helvetica','Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+
+/*  */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+nav ul li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+/*  */
+
+
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 36px;
+    font-family: 'Lato', 'Helvetica','Sans-Serif';
+    font-variant: small-caps;
+    font-weight: bold;
+    color: tomato;
+}
+
+h2 {
+    font-size: 24px;
+    font-family:'Roboto';
+    /* color: #660033; */
+    color: #5C8C9C;
+
+}
+
+
+
+h3 {
+    font-size: 16px;
+    font-family:'Lato', 'Helvetica','Sans-Serif';
+    color: #5F9EA0;
+}
+p {
+    font-family:'Lato';
+    font-size: 1em;
+    line-: 1em;
+    color: #333;
+    /* margin-left: 72px; */
+}
+ps {
+    font-size: 1em;
+    line-: 0.8em;
+    color: #333;
+}
+p.ex1 {
+  align="center";
+  line-: 1em;
+  padding-left: 100px;
+}
+p.ex2 {
+  align="right";
+  line-: 0.5em;
+  padding-left: 100px;
+}
+
+/* footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+} */
+/* footer {
+  text-align: center;
+  padding: 3px;
+  background-color: cornsilk1;
+  color: red;
+} */
+
+/* .footer {
+   position:absolute;
+   text-align: center;
+   bottom:0;
+   width:100%;
+   :60px;   /*  of the footer */
+   /* background:#6cf;
+   padding: 3px;
+   background-color: cornsilk1;
+   color: red; */
+/* } */
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:  cornsilk1;
+   color: Darkcyan;
+   text-align: center;
+   font-family: 'Karla';
+}
+
+
+ul.posts {
+    margin: 20px auto 40px;
+    font-size: 1em;
+    font-variant: small-caps;
+    font-family: 'Lato','Karla','Open_Sans';
+}
+
+ul.posts li {
+    /* list-style: none; */
+    list-style-type: circle;
+    font-family: 'Karla';
+}
+.myDiv {
+  border: 5px outset red;
+  /* background-color: lightblue; */
+  text-align: center;
+}
+
+#rcorners1 {
+  border-radius: 9px;
+  /* background: linear-gradient(to right,#99C1DE,#EFDECD); */
+    /* background: linear-gradient(to right,#063970,#EFDECD); */
+    /* background: linear-gradient(to right,#ccffff,#660033,#FFFFCC); */
+background: linear-gradient(to right,#ccffff,#003366,#FFFFCC);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: auto;
+  height: auto;
+}
+
+#rcorners2 {
+  border-radius:0.5em;
+  /* background: url(YellowBioText.png); */
+  background: #FFBF00 ;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 320px;
+  height: auto;
+}
+#rcorners3 {
+  /* images du site */
+  border-radius:9px;
+  /* background: url(YellowBioText.png); */
+  background: linear-gradient(#FFBF00,#EFDECD) ;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 320px;
+  height: 320px;
+}
+#totem4 {
+  /* trend */
+  border-radius: 9px;
+  /* background: linear-gradient(to right,#99C1DE,#EFDECD); */
+    /* background: linear-gradient(to right,#063970,#EFDECD); */
+    /* background: linear-gradient(to right,#ccffff,#660033,#FFFFCC); */
+background: linear-gradient(to right,#ccffff,#003366,#FFFFCC);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 90px;
+  height: 190px;
+}
+#totem3{
+    /* nature */
+  border-radius:9px;
+  /* background: url(YellowBioText.png); */
+  /* background: linear-gradient(#155263,#EFDECD); */
+  background: linear-gradient(#EFDECD, #336600);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 90px;
+  height: 190px;
+}
+
+#totem2 {
+  /* read */
+  border-radius:9px;
+  /* background: url(YellowBioText.png); */
+  /* background: linear-gradient(#155263,#EFDECD); */
+  background: linear-gradient(#EFDECD,#5c426c);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 90px;
+  height: 190px;
+}
+#totem1 {
+  /* image  */
+  border-radius:9px;
+  /* background: url(YellowBioText.png); */
+  background: linear-gradient(#FFBF00,#EFDECD) ;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 90px;
+  height: 190px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index:1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 150px; /* Same as the width of the sidenav */
+  font-size: 14px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* The sidebar navigation menu */
+.sidebar {
+  height: 100%;
+  width: 140px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  overflow: auto;
+  font-family: 'Karla';
+}
+
+/* Sidebar links */
+/* .sidebar a { */
+  /* display: block;
+  color: black; */
+  /* padding: 1px; */
+  /* padding: 6px 8px 6px 16px;
+  font-size: 1em;
+  text-decoration: none; */
+  /* background-color: #FFBF00; */
+/* } */
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #FFBF00;
+  /* background-color: #155263; */
+  color: tomato;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  /* background-color: #AB274F; */
+  background-color:  #FFBF00;
+
+  /* background-color: #555; */
+  color: white;
+}
+
+
+/* Style the sidenav links and the dropdown button
+.sidebar a, .dropdown-btn {*/
+.sidebar a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: 'Karla';
+  color: #155263;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidebar a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+  background:#AB274F;
+  font-size: 1em;
+  /* purple */
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  /* display: none; */
+  background-color: linear-gradient(#FFBF00,#EFDECD);
+  padding-left: 12px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  /* padding-right: 2px; */
+  color: #155263
+}
+
+
+
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  position:relative;
+  margin-left: 140px;
+  padding: 1px 16px;
+  font-family: 'Karla';
+  font-size: 16px;
+  /* height: auto; */
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 960px) {
+  .sidebar {
+    width: 80%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: left;
+    float: none;
+  }
+}
+/* end of sidebar */
+
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Coming_Soon';
+    src: url('https/theatredu1k.github.io/fonts/Coming_Soon/ComingSoon-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open_Sans';
+    src: url('https/theatredu1k.github.io/fonts/Open_Sans/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('https/theatredu1k.github.io/fonts/Merriweather/Merriweather-Light.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Karla';
+    src: url('Karla/static/Karla-Light.ttf')format('truetype');
+
+    font-style: normal;
+
+
+}
+figure {
+  border-top: none;
+  padding-top: 0;
+}
+figcaption {
+  padding: 0.5em;
+  border: thin silver solid;
+  font-size: 9px;
+  /* border-bottom: none; */
+}
+#grad1 {
+  height: 1080px
+  background-color: white; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#EFDECD, #CD2682);
+}
+#grad2 {
+  height: 1080px;
+  background-image: linear-gradient(to bottom, rgba(255,135,0,0), rgba(255,135,0,1));
+}
+#grad3 {
+  /* blue grey from beige */
+  height: 1080px;
+  background-color: lightblue; /* For browsers that do not support gradients */
+  background-image: linear-gradient( #EFDECD,#155263);
+}
+#grad4 {
+  height: 1080px;
+  background-color: white; /* For browsers that do not support gradients */
+  background-image: linear-gradient( #EFDECD,#AB274F);
+}
+#grad5 {
+  height: 120px;
+  background-color: white; /* For browsers that do not support gradients */
+  background-image: linear-gradient( #EFDECD,#AB274F);
+}
+.newspaper1 {
+  columns: 100px 3;
+}
